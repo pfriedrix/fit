@@ -12,6 +12,10 @@ int main() {
     cout << "Enter number d: " << endl;
     cin >> d;
     double x;
+    if (a - c == 0) {
+        cout << "Devision on zero is not allowed.";
+        return 1;
+    }
     x = (d - b) / (a - c);
     cout << "Result: " << x;
 }   
