@@ -73,224 +73,191 @@
     <p>Аналіз задачі:</p>
     <ul>
         <li>
-            Напишемо функцію, яка буде розкладати <b>arccot(x)</b> у ряд Тейлора. Для того, щоб перевірити правильність обчислень, виведемо на екран значення <b>arccot(x)</b>, обчисленого за допомогою написаної функції, та за допомогою бібліотеки математичних функцій <b>math</b>. Виведені значення повинні співпадати
-        </li>
-        <li>
-            Отримуємо від користувача значення <b>x</b> початкове, кінцеве, та крок. За допомогою циклу <b>for</b> перебираємо значення <b>x</b> від початкового до кінцевого. Всередині циклу for розміщуємо конструкцію if-elif-else, яка буде проводити обчислення, визначаючи, якому проміжку належить дане значення x. 
-        </li>
-        <li>
-            Результати всіх обчислень виводимо на екран увигляді таблиці: у колонці <b>y</b> буде знаходитися значення <b>y</b>, обчисленого за допомогою вище написаної функції. У колонці <b>standart</b> буде знаходитися значення y, обчисленого за допомогою бібліотеки математичних функцій <b>math</b>. У колонці <b>error</b> буде міститися значення <b>fabs(y-standart)</b>.
+            Напишемо власну функцію, використовуючи рекурсію. Функція буде повторювати сама себе, рахуючи різні варіанти послідовностей з заданої кількості нулів і одиничок. 
         </li>
     </ul>
     <center>Задача 1. Варіант 11</center>
     <p>Умова:</p>
-    <img src="images/1.png" alt="задача 1" height=100>
+    <img src="images/1.png" alt="задача 1" height=400>
     <p>Реалізація:</p>
-    <ul>
-        <li>Обчислити значення функції, розвинувши її у ряд Маклорена (або Тейлора).</li>
-        <li>Параметр функції має змінюватися від заданого з клавіатури мінімального значення до заданого користувачем максисального значення із певним кроком.</li>
-        <li>Для розвинення функції у ряд Маклорена (або Тейлора) створити власну функцію, яка розраховує суму ряду за рекурентним співвідношенням . Функції для обчислення факторіалу та степені числа не використовувати.</li>
-        <li>Визначити похибку обчислення наближених значень функції як різницю абсолютних значень наближеного обчислення та стандартного значення функції.</li>
-        <li>Значення функції acot(x) обчислювати через функції atan(x)</li>
-        <li>Визначити похибку обчислення наближених значень функції як різницю абсолютних значень наближеного обчислення та стандартного значення функції.</li>
-        <li>Стандартне значення функції обчислювати за допомогою бібліотечних математичних функцій.</li>
-        <li>Результати обчислень вивести у вигляді таблиці, яка містить колонки "Значення аргумента х", "Значення функції у", "Стандартне значення функції", "Похибка" відповідно до зразка результату, що поданий на вкладці "Виконання прикладу".</li>
-        <li>У випадку, коли для вибраних значень аргументів функція не визначена, друкувати повідомлення, наприклад, "not defined"</li>
-    </ul>
     <img src="images/2.png" alt="задача 1" height=600>
-    <p>Код программи:</p>
+    <p>Код программи (Рекурсивно):</p>
     <div style="background-color: #001628; color: white; border-radius: 10px;">
         <pre>
             <code rel='C++'>
     #include &lt;iostream>
-    #include &lt;iomanip>
-    #include &lt;math.h>
 
-    #define PI M_PI
-
-    double eps;
-
-    double expon(double x)
-    {
-        double a = 0.0;
-        double sum = 0.0,
-        n = eps * 100000000;
-
-        if( x == 1.0 ) return PI/4.0;
-        if( x == -1.0 ) return -PI/4.0;
-
-        if(n > 0)
-        {
-            if( (x < -1.0) || (x > 1.0) )
-            {
-                if( x > 1.0 )
-                    sum = PI/2.0;
-                else
-                    sum = -PI/2.0;
-                a = -1.0/x;
-                for(int j=1; j<=n; j++)
-                {
-                    sum += a;
-                    a *= -1.0*(2.0*j-1)/((2.0*j+1)*x*x);
-                }
-            }
-            else
-            {
-                sum = 0.0;
-                a = x;
-                for(int j=1; j<=n; j++)
-                {
-                    sum += a;
-                    a *= -1.0*(2.0*j-1)*x*x/(2.0*j+1);
-                }
-            }
-        }
-
-        return M_PI_2 - sum;
+    int fibonacci(int f) {
+        if (f == 0) return 0;
+        if (f == 1) return 1;
+        return fibonacci(f-1) + fibonacci(f-2);
     }
-
-    void outputSum(double x, double k, double member, double sum) {
-        std::cout << std::setw(7) << x << std::setw(12) << k << std::setw(21) << member << std::setw(17) << sum << std::endl;
+    
+    void rec_fib(int n, int m) {
+        unsigned long long int res;
+        for (int count = 0; count < m; ++count) std::cout << fibonacci(count) << " ";
+        std::cout << std::endl;
+        auto t1 = std::chrono::high_resolution_clock::now();
+        res = fibonacci(n);
+        auto t2 = std::chrono::high_resolution_clock::now();
+        std::cout << res << std::endl;
+        auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2-t1).count();
+        std::cout << "duration of recursive: " << duration << "ms" << std::endl;
     }
-
-
-    int main(int argc, const char * argv[])
-    {
+    
+    
+    int main(int argc, const char * argv[]) {
         bool quit = false;
         while (!quit) {
-            std::cout << "lab4: calculation exponention function" << std::endl;
-            bool flag = true;
-            double start, end, step, member = 0.0, error = 0.0, y = 0.0;
-            std::cout << "input start, end, step: ";
-            std::cin >> start >> end >> step;
-            std::cout << "input precision: ";
-            std::cin >> eps;
-            std::cout << "===============================================================" << std::endl;
-            std::cout << "      x           y             standart            error" << std::endl;
-            for (double x = start; x <= end; x += step)
-            {
-                if (x > 1) {
-                    double dec = expon(x), nem = expon(x - 5);
-                    if (nem != 0) {
-                        y = dec / nem;
-                        member = (M_PI_2 - atan(x)) / (M_PI_2 - atan(x - 5));
-                        error = fabs(member - y);
-                    }
-                    else {
-                        std::cout << "      Error zero!" << std::endl;
-                        continue;
-                    }
-                }
-                else if (x >= 0 && x <= 1) {
-                    y = expon(x) + expon(2 * x);
-                    member = M_PI_2 - atan(x) + M_PI_2 - atan(2 * x);
-                    error = fabs(member - y);
-                }
-                else if (x < 0) flag = false;
-                if (flag) outputSum(x, y, member, error);
-                else std::cout << x << "not define" << std::endl;
+            int m, n;
+            std::cout << "Input m and n: ";
+            std::cin >> m >> n;
+            if (m < n) {
+                std::cout << "Int m should be more than int n" << std::endl;
+            }
+            else {
+                rec_fib(n, m);
             }
             std::string input;
             std::cout << "If you want quit print 'q'. To continue print anything: ";
-
+    
             std::cin >> input;
             if (input == "q")
             {
                 quit = true;
             }
         }
-        std::cout << "Goodbye!";
+        std::cout << "Goodbye!" << std::endl;
     }
+        
+            </code>
+        </pre>
+    </div>
+    <p>Код программи (Ітеративно):</p>
+    <div style="background-color: #001628; color: white; border-radius: 10px;">
+        <pre>
+            <code rel='C++'>
+    #include &lt;iostream>
 
+    unsigned long long int iter_fib(int n) {
+        if (n < 2)
+                return n;
+            unsigned long long int mask = 1, m = n;
+            while (m > 1) {
+                m >>= 1;
+                mask <<= 1;
+            }
+            unsigned long long int fn = 1, fn1 = 1, gn, gn1;
+            while (mask > 1) {
+                mask >>= 1;
+                gn = fn;
+                gn1 = fn1;
+                if (n & mask) {
+                    fn = gn1 * gn1 + gn * gn;
+                    fn1 = gn1 * gn1 + 2 * gn * gn1;
+                } else {
+                    fn = 2 * gn * gn1 - gn * gn;
+                    fn1 = gn1 * gn1 + gn * gn;
+                }
+            }
+        return fn;
+    }
+    
+    int main(int argc, const char * argv[]) {
+        bool quit = false;
+        while (!quit) {
+            int m, n;
+            std::cout << "Input m and n: ";
+            std::cin >> m >> n;
+            if (m < n) {
+                std::cout << "Int m should be more than int n" << std::endl;
+            }
+            else {
+                unsigned long long int res;
+                for (int i = 0; i < m; i++) std::cout << iter_fib(i) << " ";
+                std::cout << std::endl;
+                auto t1 = std::chrono::high_resolution_clock::now();
+                res = iter_fib(n);
+                auto t2 = std::chrono::high_resolution_clock::now();
+                std::cout << res << std::endl;
+                auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2-t1).count();
+                std::cout << "duration of iterative: " << duration << "ms" << std::endl;
+                
+            }
+            std::string input;
+            std::cout << "If you want quit print 'q'. To continue print anything: ";
+    
+            std::cin >> input;
+            if (input == "q")
+            {
+                quit = true;
+            }
+        }
+        std::cout << "Goodbye!" << std::endl;
+    }
+    
+        
             </code>
         </pre>
     </div>
     <p>Коментарі:</p>
     <ul>
         <li><p>Для більш зручної взаємодії з программою я додав цикл, що повторює функціонал программи рівно стільки раз - скільки хоче того користувач, таким чином я ініцилізував тип данних string з індефікаторм input для зчитування данних, що ввів користувач.</p></li>
-        <li><p>В функції <b>expon()</b> використав додаткову формулу, що не було в теоретичному матеріалі.</p></li>
-        <li><p>З нового для себе - я використав <b>макрос</b> для більш зручного запису числа PI</p></li>
-        <li><p>Використав тригенометричні перетвроння для отримання арккутангенс з арктангенса.</p></li>
+        <li><p>Викристав метод <b>now()</b> для обрахунку часу, що потрібен функції <b>fibonacci()</b>.</p></li>
+        <li><p>Ітераційний підхід виявився набагато кращим за рекурсивний.</p></li>
     </ul>
     <p>Результат:</p>
-    <img src="images/3.png" alt="задача 1" height=400> 
-    <img src="images/4.png" alt="задача 1" height=400> 
-    <img src="images/5.png" alt="задача 1" height=400> 
+    <p>Рекурсивно:</p>
+    <img src="images/3.png" alt="задача 1" height=150> 
+    <p>Ітеративно:</p>
+    <img src="images/4.png" alt="задача 1" height=180> 
     <p>Аналіз:</p>
-    <p>Оскільки різниця в значенні arccot(x) обчисленого за допомогою написаної функції і математичного модуля <b>math</b> незначна, то можемо зробити висновок функція працює правильно.</p>
+    <p>При вводі данних программа видає однаковий результат і якщо подивитись на таблицю фибонначі, то побачимо, що результат правильний.</p>
+    <img src="images/5.png" alt="задача 1" height=400>
     
     <center>Задача 2. Варіант 11</center>
     <p>Умова:</p>
-    <img src="images/6.png" alt="задача 1" height=100>
+    <img src="images/6.png" alt="задача 2" height=200>
     <p>Блока-схема:</p>
-    <img src="images/7.png" alt="задача 1" height=600>
+    <img src="images/8.png" alt="задача 2" height=600>
     <p>Код программи:</p>
     <div style="background-color: #001628; color: white; border-radius: 10px;">
         <pre>
             <code rel='C++'>
     #include &lt;iostream>
-    #include &lt;math.h>
 
-    double excellent_number(int p) {
-        return pow(2, p - 1) * (pow(2, p) - 1);
+    using namespace std;
+
+    void worker() {
+        int number;
+        cin >> number;
+        if (number == 0) {
+            return;
+        }
+        else if (number % 2 != 0) {
+            cout << number << " ";
+        }
+        worker();
     }
     
     int main() {
-        bool quit = false;
-        while (!quit) {
-            
-            int n;
-            double sum;
-            
-            std::cout << "Input n: ";
-            std::cin >> n;
-        
-            for (int i = 2; i <= n; ++i) {
-                sum = excellent_number(i);
-                if (sum > n) {
-                    break;
-                }
-                std::cout << sum << std::endl;
-            }
-            std::cout << "Programm is finished" << std::endl;
-            
-            std::string input;
-            std::cout << "If you want quit print 'q'. To continue print anything: ";
+        worker();
+    }
     
-            std::cin >> input;
-            if (input == "q")
-            {
-                quit = true;
-            }
-        }
-    }    
             </code>
         </pre>
     </div>
-    <p>Коментарі:</p>
-    <ul>
-        <li><p>Для більш зручної взаємодії з программою я додав цикл, що повторює функціонал программи рівно стільки раз - скільки хоче того користувач, таким чином я ініцилізував тип данних string з індефікаторм input для зчитування данних, що ввів користувач.</p></li>
-    </ul>
     <p>Результат:</p>
-    <img src="images/8.png" alt="задача 1" height=400> 
+    <img src="images/7.png" alt="задача 2" height=100> 
     <p>Аналіз:</p>
-    <p>Якщо подивитись на перші досконалі числа, то побачимо, що программа працює правильно.</p>
-    <p>
-       <p>6,</p> 
-        <p>28,</p>
-        <p>496,</p>
-        <p>8128,</p>
-        <p>33 550 336,</p>
-        <p>8 589 869 056,</p>
-        <p>137 438 691 328,</p>
-    </p>
+    <p>Программа будет працювати до тих пір поки не отримує нуль.</p>
     
     <center><p>Висновки</p></center>
     Під час викладання лабораторної роботи:
     <ul>
-        <li>Вивчив особливості циклічних обчислювальних процесів з розгалуженнями</li>
-        <li>Опанував технологію рекурентних обчислень</li>
-        <li>Навчився розробляти алгоритми та програми розвинення функцій у ряди</li>
+        <li>Вивчив особливості рекурсивних процесів</li>
+        <li>Опанував технологію рекурсивних обчислень</li>
+        <li>Навчився розробляти алгоритми та програми із застосуванням рекурсивних функцій</li>
     </ul>
 </body>
 

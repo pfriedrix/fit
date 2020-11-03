@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0F836D25518712001372DC /* lab5_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DC59CC125372EF900865971 /* lab5_2.cpp */; };
 		4D5437ED2548B70500B899E9 /* lab5_1_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D5437EC2548B70500B899E9 /* lab5_1_6.cpp */; };
 		4D70B4B2254AB19700C46AE8 /* lab6_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D70B4B1254AB19700C46AE8 /* lab6_4.cpp */; };
 		4DCBE3BF253BA870002ABA74 /* lab4_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DDEDA81252F0E6C0060B01A /* lab4_1.cpp */; };
@@ -17,7 +18,6 @@
 		4DDEDA51252EFAF70060B01A /* lab2_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DDEDA50252EFAF70060B01A /* lab2_1.cpp */; };
 		4DDEDA5C252EFB170060B01A /* lab2_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DDEDA5B252EFB170060B01A /* lab2_2.cpp */; };
 		4DDEDA67252EFB640060B01A /* lab3_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DDEDA66252EFB640060B01A /* lab3_1.cpp */; };
-		4DF43480253D6721009F3BC0 /* lab5_1_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D12A7DC25370A0400AEAD93 /* lab5_1_1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -493,7 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF43480253D6721009F3BC0 /* lab5_1_1.cpp in Sources */,
+				4D0F836D25518712001372DC /* lab5_2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
