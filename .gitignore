@@ -4,3 +4,5 @@
 *.dSYM
 .DS_Store
 .vscode
+basic/fit/lab0/lab0_1
+*.out
