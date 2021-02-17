@@ -6,16 +6,16 @@ struct stack {
     int list[10] {};
     int top = -1;
 
-    bool is_empty() {
+    bool empty() {
         return top == -1;
     }
 
-    bool is_full() {
+    bool full() {
         return top == 9;
     }
 
     void push(int key) {
-        if (is_full()) {
+        if (full()) {
             throw "stack is full";
         }
         else {
@@ -25,7 +25,7 @@ struct stack {
     }
 
     int pop() {
-        if (is_empty()) {
+        if (empty()) {
             throw "stack is empty";
         }
         else {
@@ -35,7 +35,7 @@ struct stack {
     }
 
     int get() {
-        if (is_empty()) {
+        if (empty()) {
             throw "stack is empty";
         }
         else {
@@ -48,8 +48,32 @@ int main() {
     stack heap;
 
     try {
-        heap.push(10);
+        cout << "POP" << endl;
         cout << heap.pop() << endl;
+        cout << "PUSH 70 75" << endl;
+        heap.push(70);
+        heap.push(75);
+        cout << "GET" << endl;
+        cout << heap.get() << endl;
+        cout << "PUSH 14 70 75" << endl;
+        heap.push(14);
+        heap.push(70);
+        cout << "POP" << endl;
+        cout << heap.pop() << endl;
+        cout << "GET" << endl;
+        cout << heap.get() << endl;
+        cout << "PUSH 75" << endl;
+        heap.push(75);
+        cout << "GET" << endl;
+        cout << heap.get() << endl;
+        cout << "POP" << endl;
+        cout << heap.pop() << endl;
+        cout << heap.pop() << endl;
+        cout << "GET" << endl;
+        cout << heap.get() << endl;
+        cout << "PUSH 70" << endl;
+        heap.push(70);
+        cout << "POP" << endl;
         cout << heap.pop() << endl;
     }
     catch (const char* exception) {

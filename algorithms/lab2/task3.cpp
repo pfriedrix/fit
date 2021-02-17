@@ -5,16 +5,16 @@ struct queue {
     int list[10] {};
     int top = -1;
 
-    bool is_empty() {
+    bool empty() {
         return top == -1;
     }
 
-    bool is_full() {
+    bool full() {
         return top == 9;
     }
 
     void push(int key) {
-        if (is_full()) {
+        if (full()) {
             throw "queue is full";
         }
         else {
@@ -24,7 +24,7 @@ struct queue {
     }
 
     int pop() {
-        if (is_empty()) {
+        if (empty()) {
             throw "queue is empty";
         }
         else {
@@ -41,15 +41,18 @@ struct queue {
 int main() {
     queue q;
     try {
-        q.push(1);
-        q.push(2);
+        cout << "PUSH 70 75" << endl;
+        q.push(70);
+        q.push(75);
+        cout << "PUSH 14 77" << endl;
+        q.push(14);
+        q.push(77);
+        cout << "POP" << endl;
         cout << q.pop() << endl;
-        q.push(3);
+        cout << "POP" << endl;
         cout << q.pop() << endl;
-        q.push(4);
         cout << q.pop() << endl;
-        q.push(5);
-        cout << q.pop() << endl;
+        cout << "POP" << endl;
         cout << q.pop() << endl;
     }
     catch (const char* exception) {

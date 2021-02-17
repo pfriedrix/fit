@@ -48,9 +48,6 @@ int main() {
     cout << "Розмір матриці - ";
     int n, m;
     cin >> n >> m;
-    if (n == m) {
-        goto tryAgain;
-    }
     int arr[n][m];
     int choice;
     cout << "Як Ви хочете заповнити матрицю?" << endl << "1) Рандомно" << endl << "2) Вручну" << endl;

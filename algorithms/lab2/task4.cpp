@@ -65,30 +65,40 @@ void get(component **top) {
 void print(component **top) {
     component *instance = *top;
     while (instance != NULL){
-        cout << instance->key << endl;
+        cout << instance->key << " ";
         instance = instance->next;
     }
+    cout << endl;
 }
 
 
 int main() {
     try {
         component *top = NULL;
+        cout << "PUSH" << endl;
         srand((unsigned)(time(NULL)));
         for (int i = 0; i < 5; i++) {
             push(&top, i);
         }
         cout << "POP" << endl;
         cout << pop(&top) << endl;
-        cout << pop(&top) << endl;
         cout << "PUSH" << endl;
         push(&top, 10);
         push(&top, 15);
         cout << "PUSH" << endl;
         cout << pop(&top) << endl;
-        cout << "PRINT" << endl;
-        print(&top);
-//        cout << empty(top) << endl;
+        cout << "PEEK" << endl;
+        get(&top);
+        cout << "POP" << endl;
+        cout << pop(&top) << endl;
+        cout << "PEEK" << endl;
+        get(&top);
+        cout << "POP" << endl;
+        cout << pop(&top) << endl;
+        cout << "PEEK" << endl;
+        get(&top);
+        cout << "POP" << endl;
+        cout << pop(&top) << endl;
 
     }
     catch (const char* exception) {

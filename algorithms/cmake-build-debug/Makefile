@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named task3.2
+
+# Build rule for target.
+task3.2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task3.2
+.PHONY : task3.2
+
+# fast build rule for target.
+task3.2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.2.dir/build.make CMakeFiles/task3.2.dir/build
+.PHONY : task3.2/fast
+
+#=============================================================================
 # Target rules for targets named task2.3
 
 # Build rule for target.
@@ -142,6 +155,19 @@ task2.3: cmake_check_build_system
 task2.3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.3.dir/build.make CMakeFiles/task2.3.dir/build
 .PHONY : task2.3/fast
+
+#=============================================================================
+# Target rules for targets named task2.4
+
+# Build rule for target.
+task2.4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.4
+.PHONY : task2.4
+
+# fast build rule for target.
+task2.4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.4.dir/build.make CMakeFiles/task2.4.dir/build
+.PHONY : task2.4/fast
 
 #=============================================================================
 # Target rules for targets named task5
@@ -157,6 +183,19 @@ task5/fast:
 .PHONY : task5/fast
 
 #=============================================================================
+# Target rules for targets named task3.3
+
+# Build rule for target.
+task3.3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task3.3
+.PHONY : task3.3
+
+# fast build rule for target.
+task3.3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.3.dir/build.make CMakeFiles/task3.3.dir/build
+.PHONY : task3.3/fast
+
+#=============================================================================
 # Target rules for targets named task3
 
 # Build rule for target.
@@ -168,19 +207,6 @@ task3: cmake_check_build_system
 task3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/build
 .PHONY : task3/fast
-
-#=============================================================================
-# Target rules for targets named task2.4
-
-# Build rule for target.
-task2.4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.4
-.PHONY : task2.4
-
-# fast build rule for target.
-task2.4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.4.dir/build.make CMakeFiles/task2.4.dir/build
-.PHONY : task2.4/fast
 
 #=============================================================================
 # Target rules for targets named task2.2
@@ -220,6 +246,19 @@ task2.1: cmake_check_build_system
 task2.1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.1.dir/build.make CMakeFiles/task2.1.dir/build
 .PHONY : task2.1/fast
+
+#=============================================================================
+# Target rules for targets named task3.1
+
+# Build rule for target.
+task3.1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task3.1
+.PHONY : task3.1
+
+# fast build rule for target.
+task3.1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.1.dir/build.make CMakeFiles/task3.1.dir/build
+.PHONY : task3.1/fast
 
 #=============================================================================
 # Target rules for targets named task1
@@ -450,6 +489,87 @@ lab2/task4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.4.dir/build.make CMakeFiles/task2.4.dir/lab2/task4.cpp.s
 .PHONY : lab2/task4.cpp.s
 
+lab3/task1.o: lab3/task1.cpp.o
+
+.PHONY : lab3/task1.o
+
+# target to build an object file
+lab3/task1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.1.dir/build.make CMakeFiles/task3.1.dir/lab3/task1.cpp.o
+.PHONY : lab3/task1.cpp.o
+
+lab3/task1.i: lab3/task1.cpp.i
+
+.PHONY : lab3/task1.i
+
+# target to preprocess a source file
+lab3/task1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.1.dir/build.make CMakeFiles/task3.1.dir/lab3/task1.cpp.i
+.PHONY : lab3/task1.cpp.i
+
+lab3/task1.s: lab3/task1.cpp.s
+
+.PHONY : lab3/task1.s
+
+# target to generate assembly for a file
+lab3/task1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.1.dir/build.make CMakeFiles/task3.1.dir/lab3/task1.cpp.s
+.PHONY : lab3/task1.cpp.s
+
+lab3/task2.o: lab3/task2.cpp.o
+
+.PHONY : lab3/task2.o
+
+# target to build an object file
+lab3/task2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.2.dir/build.make CMakeFiles/task3.2.dir/lab3/task2.cpp.o
+.PHONY : lab3/task2.cpp.o
+
+lab3/task2.i: lab3/task2.cpp.i
+
+.PHONY : lab3/task2.i
+
+# target to preprocess a source file
+lab3/task2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.2.dir/build.make CMakeFiles/task3.2.dir/lab3/task2.cpp.i
+.PHONY : lab3/task2.cpp.i
+
+lab3/task2.s: lab3/task2.cpp.s
+
+.PHONY : lab3/task2.s
+
+# target to generate assembly for a file
+lab3/task2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.2.dir/build.make CMakeFiles/task3.2.dir/lab3/task2.cpp.s
+.PHONY : lab3/task2.cpp.s
+
+lab3/task3.o: lab3/task3.cpp.o
+
+.PHONY : lab3/task3.o
+
+# target to build an object file
+lab3/task3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.3.dir/build.make CMakeFiles/task3.3.dir/lab3/task3.cpp.o
+.PHONY : lab3/task3.cpp.o
+
+lab3/task3.i: lab3/task3.cpp.i
+
+.PHONY : lab3/task3.i
+
+# target to preprocess a source file
+lab3/task3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.3.dir/build.make CMakeFiles/task3.3.dir/lab3/task3.cpp.i
+.PHONY : lab3/task3.cpp.i
+
+lab3/task3.s: lab3/task3.cpp.s
+
+.PHONY : lab3/task3.s
+
+# target to generate assembly for a file
+lab3/task3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.3.dir/build.make CMakeFiles/task3.3.dir/lab3/task3.cpp.s
+.PHONY : lab3/task3.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -465,6 +585,9 @@ help:
 	@echo "... task2.3"
 	@echo "... task2.4"
 	@echo "... task3"
+	@echo "... task3.1"
+	@echo "... task3.2"
+	@echo "... task3.3"
 	@echo "... task5"
 	@echo "... lab1/task1.o"
 	@echo "... lab1/task1.i"
@@ -490,6 +613,15 @@ help:
 	@echo "... lab2/task4.o"
 	@echo "... lab2/task4.i"
 	@echo "... lab2/task4.s"
+	@echo "... lab3/task1.o"
+	@echo "... lab3/task1.i"
+	@echo "... lab3/task1.s"
+	@echo "... lab3/task2.o"
+	@echo "... lab3/task2.i"
+	@echo "... lab3/task2.s"
+	@echo "... lab3/task3.o"
+	@echo "... lab3/task3.i"
+	@echo "... lab3/task3.s"
 .PHONY : help
 
 

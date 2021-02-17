@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab2/task2.cpp" "/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles/task3.2.dir/lab2/task2.cpp.o"
+  "/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab3/task2.cpp" "/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles/task3.2.dir/lab3/task2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
