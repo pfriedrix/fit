@@ -42,16 +42,7 @@ int insertInTheEnd(List*& list, int value)
     return currElement;
 }
 
-List* createEmptyList()
-{
 
-    List* newList = new List();
-    cout << "The empty list was created" << endl;
-    cout << "\n\nPress any key to return to the menu" << endl;
-
-
-    return newList;
-}
 
 void insert(List*& list, int value)
 {
@@ -67,6 +58,17 @@ void insert(List*& list, int value)
     cout << "\n\nPress any key to return to the menu" << endl;
 
 
+}
+
+List* createEmptyList()
+{
+
+    List* newList = new List();
+    cout << "The empty list was created" << endl;
+    cout << "\n\nPress any key to return to the menu" << endl;
+
+
+    return newList;
 }
 
 

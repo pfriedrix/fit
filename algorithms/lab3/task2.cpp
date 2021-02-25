@@ -116,9 +116,8 @@ public:
 
     void appendInSorted(int key) {
         append(key);
-        sort();)))
+        sort();
     }
-
 };
 
 int main() {

@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-bui
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/task4.1.dir/all
 all: CMakeFiles/task3.2.dir/all
 all: CMakeFiles/task2.3.dir/all
 all: CMakeFiles/task2.4.dir/all
@@ -93,6 +94,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/task4.1.dir/clean
 clean: CMakeFiles/task3.2.dir/clean
 clean: CMakeFiles/task2.3.dir/clean
 clean: CMakeFiles/task2.4.dir/clean
@@ -106,6 +108,33 @@ clean: CMakeFiles/task3.1.dir/clean
 clean: CMakeFiles/task1.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/task4.1.dir
+
+# All Build rule for target.
+CMakeFiles/task4.1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task4.1.dir/build.make CMakeFiles/task4.1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task4.1.dir/build.make CMakeFiles/task4.1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target task4.1"
+.PHONY : CMakeFiles/task4.1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/task4.1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/task4.1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/task4.1.dir/rule
+
+# Convenience name for target.
+task4.1: CMakeFiles/task4.1.dir/rule
+
+.PHONY : task4.1
+
+# clean rule for target.
+CMakeFiles/task4.1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task4.1.dir/build.make CMakeFiles/task4.1.dir/clean
+.PHONY : CMakeFiles/task4.1.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/task3.2.dir
@@ -195,7 +224,7 @@ CMakeFiles/task2.4.dir/clean:
 CMakeFiles/task5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.dir/build.make CMakeFiles/task5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.dir/build.make CMakeFiles/task5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target task5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target task5"
 .PHONY : CMakeFiles/task5.dir/all
 
 # Build rule for subdir invocation for target.

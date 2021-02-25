@@ -1,0 +1,15 @@
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/bin/Debug/net5.0/lab1.deps.json
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/bin/Debug/net5.0/lab1.runtimeconfig.json
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/bin/Debug/net5.0/lab1.runtimeconfig.dev.json
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/bin/Debug/net5.0/lab1.dll
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/bin/Debug/net5.0/ref/lab1.dll
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/bin/Debug/net5.0/lab1.pdb
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/obj/Debug/net5.0/lab1.csprojAssemblyReference.cache
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/obj/Debug/net5.0/lab1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/obj/Debug/net5.0/lab1.AssemblyInfoInputs.cache
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/obj/Debug/net5.0/lab1.AssemblyInfo.cs
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/obj/Debug/net5.0/lab1.csproj.CoreCompileInputs.cache
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/obj/Debug/net5.0/lab1.dll
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/obj/Debug/net5.0/ref/lab1.dll
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/obj/Debug/net5.0/lab1.pdb
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab1/obj/Debug/net5.0/lab1.genruntimeconfig.cache
