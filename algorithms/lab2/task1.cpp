@@ -1,9 +1,10 @@
 #include <iostream>
+
 using namespace std;
 
 
 struct stack {
-    int list[10] {};
+    int list[10]{};
     int top = -1;
 
     bool empty() {
@@ -17,8 +18,7 @@ struct stack {
     void push(int key) {
         if (full()) {
             throw "stack is full";
-        }
-        else {
+        } else {
             top++;
             list[top] = key;
         }
@@ -27,18 +27,16 @@ struct stack {
     int pop() {
         if (empty()) {
             throw "stack is empty";
-        }
-        else {
+        } else {
             top--;
-            return list[top+1];
+            return list[top + 1];
         }
     }
 
     int get() {
         if (empty()) {
             throw "stack is empty";
-        }
-        else {
+        } else {
             return list[top];
         }
     }
@@ -55,7 +53,7 @@ int main() {
         heap.push(75);
         cout << "GET" << endl;
         cout << heap.get() << endl;
-        cout << "PUSH 14 70 75" << endl;
+        cout << "PUSH 14 70" << endl;
         heap.push(14);
         heap.push(70);
         cout << "POP" << endl;
@@ -76,7 +74,7 @@ int main() {
         cout << "POP" << endl;
         cout << heap.pop() << endl;
     }
-    catch (const char* exception) {
+    catch (const char *exception) {
         std::cerr << "Error: " << exception << std::endl;
     }
 

@@ -131,6 +131,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named task5.2
+
+# Build rule for target.
+task5.2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task5.2
+.PHONY : task5.2
+
+# fast build rule for target.
+task5.2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.2.dir/build.make CMakeFiles/task5.2.dir/build
+.PHONY : task5.2/fast
+
+#=============================================================================
+# Target rules for targets named task5.1
+
+# Build rule for target.
+task5.1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task5.1
+.PHONY : task5.1
+
+# fast build rule for target.
+task5.1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.1.dir/build.make CMakeFiles/task5.1.dir/build
+.PHONY : task5.1/fast
+
+#=============================================================================
 # Target rules for targets named task4.1
 
 # Build rule for target.
@@ -142,123 +168,6 @@ task4.1: cmake_check_build_system
 task4.1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task4.1.dir/build.make CMakeFiles/task4.1.dir/build
 .PHONY : task4.1/fast
-
-#=============================================================================
-# Target rules for targets named task3.2
-
-# Build rule for target.
-task3.2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task3.2
-.PHONY : task3.2
-
-# fast build rule for target.
-task3.2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.2.dir/build.make CMakeFiles/task3.2.dir/build
-.PHONY : task3.2/fast
-
-#=============================================================================
-# Target rules for targets named task2.3
-
-# Build rule for target.
-task2.3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.3
-.PHONY : task2.3
-
-# fast build rule for target.
-task2.3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.3.dir/build.make CMakeFiles/task2.3.dir/build
-.PHONY : task2.3/fast
-
-#=============================================================================
-# Target rules for targets named task2.4
-
-# Build rule for target.
-task2.4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.4
-.PHONY : task2.4
-
-# fast build rule for target.
-task2.4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.4.dir/build.make CMakeFiles/task2.4.dir/build
-.PHONY : task2.4/fast
-
-#=============================================================================
-# Target rules for targets named task5
-
-# Build rule for target.
-task5: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task5
-.PHONY : task5
-
-# fast build rule for target.
-task5/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.dir/build.make CMakeFiles/task5.dir/build
-.PHONY : task5/fast
-
-#=============================================================================
-# Target rules for targets named task3.3
-
-# Build rule for target.
-task3.3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task3.3
-.PHONY : task3.3
-
-# fast build rule for target.
-task3.3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.3.dir/build.make CMakeFiles/task3.3.dir/build
-.PHONY : task3.3/fast
-
-#=============================================================================
-# Target rules for targets named task3
-
-# Build rule for target.
-task3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task3
-.PHONY : task3
-
-# fast build rule for target.
-task3/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/build
-.PHONY : task3/fast
-
-#=============================================================================
-# Target rules for targets named task2.2
-
-# Build rule for target.
-task2.2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.2
-.PHONY : task2.2
-
-# fast build rule for target.
-task2.2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.2.dir/build.make CMakeFiles/task2.2.dir/build
-.PHONY : task2.2/fast
-
-#=============================================================================
-# Target rules for targets named task2
-
-# Build rule for target.
-task2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2
-.PHONY : task2
-
-# fast build rule for target.
-task2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/build
-.PHONY : task2/fast
-
-#=============================================================================
-# Target rules for targets named task2.1
-
-# Build rule for target.
-task2.1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.1
-.PHONY : task2.1
-
-# fast build rule for target.
-task2.1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.1.dir/build.make CMakeFiles/task2.1.dir/build
-.PHONY : task2.1/fast
 
 #=============================================================================
 # Target rules for targets named task3.1
@@ -274,17 +183,134 @@ task3.1/fast:
 .PHONY : task3.1/fast
 
 #=============================================================================
-# Target rules for targets named task1
+# Target rules for targets named task3.2
 
 # Build rule for target.
-task1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task1
-.PHONY : task1
+task3.2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task3.2
+.PHONY : task3.2
 
 # fast build rule for target.
-task1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.dir/build.make CMakeFiles/task1.dir/build
-.PHONY : task1/fast
+task3.2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.2.dir/build.make CMakeFiles/task3.2.dir/build
+.PHONY : task3.2/fast
+
+#=============================================================================
+# Target rules for targets named task1.3
+
+# Build rule for target.
+task1.3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task1.3
+.PHONY : task1.3
+
+# fast build rule for target.
+task1.3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.3.dir/build.make CMakeFiles/task1.3.dir/build
+.PHONY : task1.3/fast
+
+#=============================================================================
+# Target rules for targets named task2.3
+
+# Build rule for target.
+task2.3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.3
+.PHONY : task2.3
+
+# fast build rule for target.
+task2.3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.3.dir/build.make CMakeFiles/task2.3.dir/build
+.PHONY : task2.3/fast
+
+#=============================================================================
+# Target rules for targets named task2.1
+
+# Build rule for target.
+task2.1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.1
+.PHONY : task2.1
+
+# fast build rule for target.
+task2.1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.1.dir/build.make CMakeFiles/task2.1.dir/build
+.PHONY : task2.1/fast
+
+#=============================================================================
+# Target rules for targets named task2.4
+
+# Build rule for target.
+task2.4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.4
+.PHONY : task2.4
+
+# fast build rule for target.
+task2.4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.4.dir/build.make CMakeFiles/task2.4.dir/build
+.PHONY : task2.4/fast
+
+#=============================================================================
+# Target rules for targets named task2.2
+
+# Build rule for target.
+task2.2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.2
+.PHONY : task2.2
+
+# fast build rule for target.
+task2.2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.2.dir/build.make CMakeFiles/task2.2.dir/build
+.PHONY : task2.2/fast
+
+#=============================================================================
+# Target rules for targets named task1.1
+
+# Build rule for target.
+task1.1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task1.1
+.PHONY : task1.1
+
+# fast build rule for target.
+task1.1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.1.dir/build.make CMakeFiles/task1.1.dir/build
+.PHONY : task1.1/fast
+
+#=============================================================================
+# Target rules for targets named task1.2
+
+# Build rule for target.
+task1.2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task1.2
+.PHONY : task1.2
+
+# fast build rule for target.
+task1.2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.2.dir/build.make CMakeFiles/task1.2.dir/build
+.PHONY : task1.2/fast
+
+#=============================================================================
+# Target rules for targets named task1.5
+
+# Build rule for target.
+task1.5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task1.5
+.PHONY : task1.5
+
+# fast build rule for target.
+task1.5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.5.dir/build.make CMakeFiles/task1.5.dir/build
+.PHONY : task1.5/fast
+
+#=============================================================================
+# Target rules for targets named task3.3
+
+# Build rule for target.
+task3.3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task3.3
+.PHONY : task3.3
+
+# fast build rule for target.
+task3.3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.3.dir/build.make CMakeFiles/task3.3.dir/build
+.PHONY : task3.3/fast
 
 lab1/task1.o: lab1/task1.cpp.o
 
@@ -292,7 +318,7 @@ lab1/task1.o: lab1/task1.cpp.o
 
 # target to build an object file
 lab1/task1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.dir/build.make CMakeFiles/task1.dir/lab1/task1.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.1.dir/build.make CMakeFiles/task1.1.dir/lab1/task1.cpp.o
 .PHONY : lab1/task1.cpp.o
 
 lab1/task1.i: lab1/task1.cpp.i
@@ -301,7 +327,7 @@ lab1/task1.i: lab1/task1.cpp.i
 
 # target to preprocess a source file
 lab1/task1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.dir/build.make CMakeFiles/task1.dir/lab1/task1.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.1.dir/build.make CMakeFiles/task1.1.dir/lab1/task1.cpp.i
 .PHONY : lab1/task1.cpp.i
 
 lab1/task1.s: lab1/task1.cpp.s
@@ -310,7 +336,7 @@ lab1/task1.s: lab1/task1.cpp.s
 
 # target to generate assembly for a file
 lab1/task1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.dir/build.make CMakeFiles/task1.dir/lab1/task1.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.1.dir/build.make CMakeFiles/task1.1.dir/lab1/task1.cpp.s
 .PHONY : lab1/task1.cpp.s
 
 lab1/task2.o: lab1/task2.cpp.o
@@ -319,7 +345,7 @@ lab1/task2.o: lab1/task2.cpp.o
 
 # target to build an object file
 lab1/task2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/lab1/task2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.2.dir/build.make CMakeFiles/task1.2.dir/lab1/task2.cpp.o
 .PHONY : lab1/task2.cpp.o
 
 lab1/task2.i: lab1/task2.cpp.i
@@ -328,7 +354,7 @@ lab1/task2.i: lab1/task2.cpp.i
 
 # target to preprocess a source file
 lab1/task2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/lab1/task2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.2.dir/build.make CMakeFiles/task1.2.dir/lab1/task2.cpp.i
 .PHONY : lab1/task2.cpp.i
 
 lab1/task2.s: lab1/task2.cpp.s
@@ -337,7 +363,7 @@ lab1/task2.s: lab1/task2.cpp.s
 
 # target to generate assembly for a file
 lab1/task2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/lab1/task2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.2.dir/build.make CMakeFiles/task1.2.dir/lab1/task2.cpp.s
 .PHONY : lab1/task2.cpp.s
 
 lab1/task3.o: lab1/task3.cpp.o
@@ -346,7 +372,7 @@ lab1/task3.o: lab1/task3.cpp.o
 
 # target to build an object file
 lab1/task3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/lab1/task3.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.3.dir/build.make CMakeFiles/task1.3.dir/lab1/task3.cpp.o
 .PHONY : lab1/task3.cpp.o
 
 lab1/task3.i: lab1/task3.cpp.i
@@ -355,7 +381,7 @@ lab1/task3.i: lab1/task3.cpp.i
 
 # target to preprocess a source file
 lab1/task3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/lab1/task3.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.3.dir/build.make CMakeFiles/task1.3.dir/lab1/task3.cpp.i
 .PHONY : lab1/task3.cpp.i
 
 lab1/task3.s: lab1/task3.cpp.s
@@ -364,7 +390,7 @@ lab1/task3.s: lab1/task3.cpp.s
 
 # target to generate assembly for a file
 lab1/task3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/lab1/task3.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.3.dir/build.make CMakeFiles/task1.3.dir/lab1/task3.cpp.s
 .PHONY : lab1/task3.cpp.s
 
 lab1/task5.o: lab1/task5.cpp.o
@@ -373,7 +399,7 @@ lab1/task5.o: lab1/task5.cpp.o
 
 # target to build an object file
 lab1/task5.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.dir/build.make CMakeFiles/task5.dir/lab1/task5.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.5.dir/build.make CMakeFiles/task1.5.dir/lab1/task5.cpp.o
 .PHONY : lab1/task5.cpp.o
 
 lab1/task5.i: lab1/task5.cpp.i
@@ -382,7 +408,7 @@ lab1/task5.i: lab1/task5.cpp.i
 
 # target to preprocess a source file
 lab1/task5.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.dir/build.make CMakeFiles/task5.dir/lab1/task5.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.5.dir/build.make CMakeFiles/task1.5.dir/lab1/task5.cpp.i
 .PHONY : lab1/task5.cpp.i
 
 lab1/task5.s: lab1/task5.cpp.s
@@ -391,7 +417,7 @@ lab1/task5.s: lab1/task5.cpp.s
 
 # target to generate assembly for a file
 lab1/task5.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.dir/build.make CMakeFiles/task5.dir/lab1/task5.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task1.5.dir/build.make CMakeFiles/task1.5.dir/lab1/task5.cpp.s
 .PHONY : lab1/task5.cpp.s
 
 lab2/task1.o: lab2/task1.cpp.o
@@ -610,6 +636,60 @@ lab4/task1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task4.1.dir/build.make CMakeFiles/task4.1.dir/lab4/task1.cpp.s
 .PHONY : lab4/task1.cpp.s
 
+lab5/task1.o: lab5/task1.cpp.o
+
+.PHONY : lab5/task1.o
+
+# target to build an object file
+lab5/task1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.1.dir/build.make CMakeFiles/task5.1.dir/lab5/task1.cpp.o
+.PHONY : lab5/task1.cpp.o
+
+lab5/task1.i: lab5/task1.cpp.i
+
+.PHONY : lab5/task1.i
+
+# target to preprocess a source file
+lab5/task1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.1.dir/build.make CMakeFiles/task5.1.dir/lab5/task1.cpp.i
+.PHONY : lab5/task1.cpp.i
+
+lab5/task1.s: lab5/task1.cpp.s
+
+.PHONY : lab5/task1.s
+
+# target to generate assembly for a file
+lab5/task1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.1.dir/build.make CMakeFiles/task5.1.dir/lab5/task1.cpp.s
+.PHONY : lab5/task1.cpp.s
+
+lab5/task2.o: lab5/task2.cpp.o
+
+.PHONY : lab5/task2.o
+
+# target to build an object file
+lab5/task2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.2.dir/build.make CMakeFiles/task5.2.dir/lab5/task2.cpp.o
+.PHONY : lab5/task2.cpp.o
+
+lab5/task2.i: lab5/task2.cpp.i
+
+.PHONY : lab5/task2.i
+
+# target to preprocess a source file
+lab5/task2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.2.dir/build.make CMakeFiles/task5.2.dir/lab5/task2.cpp.i
+.PHONY : lab5/task2.cpp.i
+
+lab5/task2.s: lab5/task2.cpp.s
+
+.PHONY : lab5/task2.s
+
+# target to generate assembly for a file
+lab5/task2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.2.dir/build.make CMakeFiles/task5.2.dir/lab5/task2.cpp.s
+.PHONY : lab5/task2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -618,18 +698,20 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... task1"
-	@echo "... task2"
+	@echo "... task1.1"
+	@echo "... task1.2"
+	@echo "... task1.3"
+	@echo "... task1.5"
 	@echo "... task2.1"
 	@echo "... task2.2"
 	@echo "... task2.3"
 	@echo "... task2.4"
-	@echo "... task3"
 	@echo "... task3.1"
 	@echo "... task3.2"
 	@echo "... task3.3"
 	@echo "... task4.1"
-	@echo "... task5"
+	@echo "... task5.1"
+	@echo "... task5.2"
 	@echo "... lab1/task1.o"
 	@echo "... lab1/task1.i"
 	@echo "... lab1/task1.s"
@@ -666,6 +748,12 @@ help:
 	@echo "... lab4/task1.o"
 	@echo "... lab4/task1.i"
 	@echo "... lab4/task1.s"
+	@echo "... lab5/task1.o"
+	@echo "... lab5/task1.i"
+	@echo "... lab5/task1.s"
+	@echo "... lab5/task2.o"
+	@echo "... lab5/task2.i"
+	@echo "... lab5/task2.s"
 .PHONY : help
 
 

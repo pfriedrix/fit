@@ -57,27 +57,21 @@ int main() {
     int arr[length];
     int choice;
     cout << "Як Ви хочете заповнити массив?" << endl << "1) Рандомно" << endl << "2) Вручну" << endl;
-    while(true)
-    {
-        srand((unsigned)(time(NULL)));
+    while (true) {
+        srand((unsigned) (time(NULL)));
         cin >> choice;
-        if (choice == 1)
-        {
+        if (choice == 1) {
             for (int i = 0; i < n; i++) {
                 arr[i] = (rand() % 10) - 5;
             }
             break;
-        }
-        else if (choice == 2)
-        {
+        } else if (choice == 2) {
 
             for (int i = 0; i < n; i++) {
                 cin >> arr[i];
             }
             break;
-        }
-        else
-        {
+        } else {
             cout << "Ви нічого не вибрали, спробуйте ще раз: ";
             continue;
         }
@@ -91,3 +85,4 @@ int main() {
     cout << "Сумма елементів масиву, що розташовані між першим і останнім додатними елементами - "
          << count_sum_by_slicer(arr, slicer[0], slicer[1]);
 }
+

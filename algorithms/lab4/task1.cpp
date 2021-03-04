@@ -4,8 +4,9 @@
 
 using std::cout; using std::endl; using std::cin;
 
+
 class Tree {
-private:
+public:
     struct Node {
         Node() : right(nullptr), left(nullptr) {}
 
@@ -16,7 +17,6 @@ private:
         Node *left;
     };
 
-public:
     Node *root;
 
     Tree() {
@@ -27,20 +27,16 @@ public:
         delete root;
     }
 
-    void insert(int key) {
-        if (root == nullptr) {
-            root = new Node(key);
-        } else {
-            Node *leaf = new Node(key);
-            Node *curr = root;
-            while (curr->left != nullptr || curr->right != nullptr) {
-                if (key >= curr->key && curr->right != nullptr) curr = curr->right;
-                else if (key < curr->key && curr->left != nullptr) curr = curr->left;
-                else break;
-            }
-            if (key >= curr->key) curr->right = leaf;
-            else curr->left = leaf;
+    Node *insert(Node *node, int key) {
+        if (node == nullptr) {
+            return new Node(key);
         }
+        if (key >= node->key) {
+            node->right = insert(node->right, key);
+        } else {
+            node->left = insert(node->left, key);
+        }
+        return node;
     }
 
     Node *search(Node *node, int key) {
@@ -50,7 +46,7 @@ public:
         if (node->key < key)
             return search(node->right, key);
 
-        return search(root->left, key);
+        return search(node->left, key);
     }
 
     static Node *minValueNode(Node *node) {
@@ -165,44 +161,34 @@ public:
 
 int main() {
     Tree instance = *new Tree();
-    instance.insert(5);
-    instance.insert(3);
-    instance.insert(4);
-    instance.insert(1);
-    instance.insert(2);
-    instance.insert(7);
-    instance.insert(6);
-    instance.insert(9);
-    instance.insert(8);
-
-
-    cout << " jkdjfsklj" << endl;
-    instance.postorder(instance.root);
+    Tree::Node *root = instance.insert(instance.root, 20);
+    instance.insert(root, 19);
+    Tree::Node *node = instance.search(root, 19);
+    instance.insert(node, 21);
+    instance.insert(node, 7);
+    node = instance.search(root, 7);
+    instance.insert(node, 12);
+    node = instance.search(root->left, 21);
+    instance.insert(node, 4);
+    instance.insert(node, 29);
+    node = instance.search(root, 20);
+    instance.insert(node, 27);
+    node = instance.search(root, 27);
+    instance.insert(node, 28);
+    instance.insert(node, 5);
+    node = instance.search(root->right, 5);
+    instance.insert(node, 6);
+    node = instance.search(root, 28);
+    instance.insert(node, 1);
+    instance.insert(node, 30);
+    instance.print(root);
     cout << endl;
-    cout << " jkdjfsklj" << endl;
-    instance.inorder(instance.root);
+    instance.remove(root->left, 21);
+    instance.print(root);
     cout << endl;
-    cout << " jkdjfsklj" << endl;
-    instance.preorder(instance.root);
+    instance.insert(root, 25);
+    instance.print(root);
     cout << endl;
-    cout << " Другой" << endl;
-
-    instance.print(instance.root);
-    cout << endl;
-    instance.remove(instance.root, 7);
-    instance.print(instance.root);
-    cout << endl;
-    cout << " Другой" << endl;
-    Tree *sec_inst = instance.copyTree();
-    instance.remove(instance.root, 4);
-    sec_inst->print(sec_inst->root);
-    cout << endl;
-    sec_inst->remove(sec_inst->root, 6);
-    cout << " Старый" << endl;
-    instance.print(instance.root);
-    cout << endl;
-    cout << " Другой" << endl;
-    sec_inst->print(sec_inst->root);
-    cout << endl;
-
+    instance.inorder(root);
 }
+
