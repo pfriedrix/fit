@@ -45,7 +45,6 @@ public:
 
         if (node->key < key)
             return search(node->right, key);
-
         return search(node->left, key);
     }
 
@@ -54,7 +53,6 @@ public:
 
         while (curr && curr->left != nullptr)
             curr = curr->left;
-
         return curr;
     }
 

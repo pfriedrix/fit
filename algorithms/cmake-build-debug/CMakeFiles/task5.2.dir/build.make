@@ -77,27 +77,27 @@ include CMakeFiles/task5.2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/task5.2.dir/flags.make
 
-CMakeFiles/task5.2.dir/lab5/task2.cpp.o: CMakeFiles/task5.2.dir/flags.make
-CMakeFiles/task5.2.dir/lab5/task2.cpp.o: ../lab5/task2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task5.2.dir/lab5/task2.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task5.2.dir/lab5/task2.cpp.o -c /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab5/task2.cpp
+CMakeFiles/task5.2.dir/lab5/task3.cpp.o: CMakeFiles/task5.2.dir/flags.make
+CMakeFiles/task5.2.dir/lab5/task3.cpp.o: ../lab5/task3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task5.2.dir/lab5/task3.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/task5.2.dir/lab5/task3.cpp.o -c /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab5/task3.cpp
 
-CMakeFiles/task5.2.dir/lab5/task2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task5.2.dir/lab5/task2.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab5/task2.cpp > CMakeFiles/task5.2.dir/lab5/task2.cpp.i
+CMakeFiles/task5.2.dir/lab5/task3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task5.2.dir/lab5/task3.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab5/task3.cpp > CMakeFiles/task5.2.dir/lab5/task3.cpp.i
 
-CMakeFiles/task5.2.dir/lab5/task2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task5.2.dir/lab5/task2.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab5/task2.cpp -o CMakeFiles/task5.2.dir/lab5/task2.cpp.s
+CMakeFiles/task5.2.dir/lab5/task3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task5.2.dir/lab5/task3.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab5/task3.cpp -o CMakeFiles/task5.2.dir/lab5/task3.cpp.s
 
 # Object files for target task5.2
 task5_2_OBJECTS = \
-"CMakeFiles/task5.2.dir/lab5/task2.cpp.o"
+"CMakeFiles/task5.2.dir/lab5/task3.cpp.o"
 
 # External object files for target task5.2
 task5_2_EXTERNAL_OBJECTS =
 
-task5.2: CMakeFiles/task5.2.dir/lab5/task2.cpp.o
+task5.2: CMakeFiles/task5.2.dir/lab5/task3.cpp.o
 task5.2: CMakeFiles/task5.2.dir/build.make
 task5.2: CMakeFiles/task5.2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable task5.2"

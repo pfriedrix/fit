@@ -56,11 +56,10 @@ private:
     double arr[length]{};
 
     static int getHash(int key) {
-        const int n = length;
-        const double a = 0.6180339887;
-        return n * fmod(key * a, 1);
+        const int m = 7;
+        const double a = 0.5;
+        return m * fmod(key * a, 1);
     }
-
 
 public:
     void insert(Trapezoid *instance) {
@@ -87,20 +86,58 @@ public:
             }
         }
     }
-
 };
+
+int *countMatrix(int size, int *ptr) {
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            std::cin >> *(ptr + i * size + j);
+        }
+
+    }
+    cout << "Your matrix is" << endl;
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            cout << *(ptr + i * size + j) << " ";
+        }
+        cout << endl;
+
+    }
+    int m[]{0, 1};
+    return m;
+}
 
 
 int main() {
-    Trapezoid *instance = new Trapezoid(point(4, 5), point(1, 0), point(-8, 10), point(4,
-                                                                                       0));
-    Trapezoid *instance2 = new Trapezoid(point(4, 8), point(1, 1), point(-8, 10), point(4,
-                                                                                        0));
-    Hash hashtable;
-    hashtable.insert(instance);
-    hashtable.insert(instance2);
-    hashtable.insert(instance);
-
-
-    hashtable.display();
+//    Trapezoid *instance = new Trapezoid(point(0, 0), point(0, 1), point(1, 0), point(7,
+//                                                                                     8));
+//    Trapezoid *instance2 = new Trapezoid(point(0, -2), point(0, 0), point(-2, 4), point(5,
+//                                                                                        6));
+//    Trapezoid *instance3 = new Trapezoid(point(1, 1), point(2, 2), point(-3, 3), point(6,
+//                                                                                       7));
+//    Trapezoid *instance4 = new Trapezoid(point(-1, 1), point(-2, 2), point(3, 1), point(4,
+//                                                                                        5));
+//    Hash hashtable;
+//    hashtable.insert(instance);
+//    hashtable.insert(instance2);
+//    hashtable.insert(instance3);
+//    hashtable.insert(instance4);
+//
+//
+//    hashtable.display();s
+    cout << "input your point" << endl;
+    int x;
+    std::cin >> x;
+    if (x < 2 || x > 50) {
+        cout << "try again" << endl;
+        main();
+    }
+    int arr[x][x];
+    int *ptr = countMatrix(x, *arr);
+    cout << *ptr;
+    cout << endl;
+    cout << *(ptr + 1);
 }
+
+
+

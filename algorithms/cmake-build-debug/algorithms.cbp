@@ -17,6 +17,132 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="task6.2">
+				<Option output="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/task6.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 task6.2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task6.2/fast">
+				<Option output="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/task6.2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 task6.2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task6.3">
+				<Option output="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/task6.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 task6.3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task6.3/fast">
+				<Option output="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/task6.3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 task6.3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task6.1">
+				<Option output="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/task6.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 task6.1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task6.1/fast">
+				<Option output="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/task6.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 task6.1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug"/>
 				<Option type="4"/>
@@ -665,8 +791,17 @@
 		<Unit filename="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab5/task1.cpp">
 			<Option target="task5.1"/>
 		</Unit>
-		<Unit filename="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab5/task2.cpp">
+		<Unit filename="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab5/task3.cpp">
 			<Option target="task5.2"/>
+		</Unit>
+		<Unit filename="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab6/task1.cpp">
+			<Option target="task6.1"/>
+		</Unit>
+		<Unit filename="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab6/task2.cpp">
+			<Option target="task6.2"/>
+		</Unit>
+		<Unit filename="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab6/task3.cpp">
+			<Option target="task6.3"/>
 		</Unit>
 		<Unit filename="/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
