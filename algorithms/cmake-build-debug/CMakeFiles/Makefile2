@@ -77,6 +77,7 @@ all: CMakeFiles/task6.2.dir/all
 all: CMakeFiles/task6.3.dir/all
 all: CMakeFiles/task6.1.dir/all
 all: CMakeFiles/task5.2.dir/all
+all: CMakeFiles/task7.1.dir/all
 all: CMakeFiles/task5.1.dir/all
 all: CMakeFiles/task4.1.dir/all
 all: CMakeFiles/task3.1.dir/all
@@ -103,6 +104,7 @@ clean: CMakeFiles/task6.2.dir/clean
 clean: CMakeFiles/task6.3.dir/clean
 clean: CMakeFiles/task6.1.dir/clean
 clean: CMakeFiles/task5.2.dir/clean
+clean: CMakeFiles/task7.1.dir/clean
 clean: CMakeFiles/task5.1.dir/clean
 clean: CMakeFiles/task4.1.dir/clean
 clean: CMakeFiles/task3.1.dir/clean
@@ -226,6 +228,33 @@ task5.2: CMakeFiles/task5.2.dir/rule
 CMakeFiles/task5.2.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.2.dir/build.make CMakeFiles/task5.2.dir/clean
 .PHONY : CMakeFiles/task5.2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/task7.1.dir
+
+# All Build rule for target.
+CMakeFiles/task7.1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task7.1.dir/build.make CMakeFiles/task7.1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task7.1.dir/build.make CMakeFiles/task7.1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target task7.1"
+.PHONY : CMakeFiles/task7.1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/task7.1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/task7.1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/task7.1.dir/rule
+
+# Convenience name for target.
+task7.1: CMakeFiles/task7.1.dir/rule
+
+.PHONY : task7.1
+
+# clean rule for target.
+CMakeFiles/task7.1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task7.1.dir/build.make CMakeFiles/task7.1.dir/clean
+.PHONY : CMakeFiles/task7.1.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/task5.1.dir

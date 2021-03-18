@@ -49,7 +49,7 @@ int main() {
     int arr[length];
     srand((unsigned) (time(nullptr)));
     for (int i = 0; i < length; i++) {
-        arr[i] = rand() % 10 - 5;
+        cin >> arr[i];
     }
     display(arr, length);
     bubbleSort(arr, length);
@@ -57,5 +57,6 @@ int main() {
     cout << "Enter number which you wanna search: ";
     int key;
     cin >> key;
-    cout << binarySearch(arr, 0, length - 1, key);
+    int res = binarySearch(arr, 0, length - 1, key);
+    cout << "Index: " << res;
 }

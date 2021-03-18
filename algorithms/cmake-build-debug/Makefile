@@ -183,6 +183,19 @@ task5.2/fast:
 .PHONY : task5.2/fast
 
 #=============================================================================
+# Target rules for targets named task7.1
+
+# Build rule for target.
+task7.1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task7.1
+.PHONY : task7.1
+
+# fast build rule for target.
+task7.1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task7.1.dir/build.make CMakeFiles/task7.1.dir/build
+.PHONY : task7.1/fast
+
+#=============================================================================
 # Target rules for targets named task5.1
 
 # Build rule for target.
@@ -810,6 +823,33 @@ lab6/task3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task6.3.dir/build.make CMakeFiles/task6.3.dir/lab6/task3.cpp.s
 .PHONY : lab6/task3.cpp.s
 
+lab7/task1.o: lab7/task1.cpp.o
+
+.PHONY : lab7/task1.o
+
+# target to build an object file
+lab7/task1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task7.1.dir/build.make CMakeFiles/task7.1.dir/lab7/task1.cpp.o
+.PHONY : lab7/task1.cpp.o
+
+lab7/task1.i: lab7/task1.cpp.i
+
+.PHONY : lab7/task1.i
+
+# target to preprocess a source file
+lab7/task1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task7.1.dir/build.make CMakeFiles/task7.1.dir/lab7/task1.cpp.i
+.PHONY : lab7/task1.cpp.i
+
+lab7/task1.s: lab7/task1.cpp.s
+
+.PHONY : lab7/task1.s
+
+# target to generate assembly for a file
+lab7/task1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task7.1.dir/build.make CMakeFiles/task7.1.dir/lab7/task1.cpp.s
+.PHONY : lab7/task1.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -835,6 +875,7 @@ help:
 	@echo "... task6.1"
 	@echo "... task6.2"
 	@echo "... task6.3"
+	@echo "... task7.1"
 	@echo "... lab1/task1.o"
 	@echo "... lab1/task1.i"
 	@echo "... lab1/task1.s"
@@ -886,6 +927,9 @@ help:
 	@echo "... lab6/task3.o"
 	@echo "... lab6/task3.i"
 	@echo "... lab6/task3.s"
+	@echo "... lab7/task1.o"
+	@echo "... lab7/task1.i"
+	@echo "... lab7/task1.s"
 .PHONY : help
 
 
