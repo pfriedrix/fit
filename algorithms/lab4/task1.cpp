@@ -159,34 +159,29 @@ public:
 
 int main() {
     Tree instance = *new Tree();
-    Tree::Node *root = instance.insert(instance.root, 20);
-    instance.insert(root, 19);
-    Tree::Node *node = instance.search(root, 19);
-    instance.insert(node, 21);
-    instance.insert(node, 7);
-    node = instance.search(root, 7);
-    instance.insert(node, 12);
-    node = instance.search(root->left, 21);
-    instance.insert(node, 4);
-    instance.insert(node, 29);
-    node = instance.search(root, 20);
-    instance.insert(node, 27);
-    node = instance.search(root, 27);
-    instance.insert(node, 28);
-    instance.insert(node, 5);
-    node = instance.search(root->right, 5);
-    instance.insert(node, 6);
-    node = instance.search(root, 28);
-    instance.insert(node, 1);
-    instance.insert(node, 30);
-    instance.print(root);
-    cout << endl;
-    instance.remove(root->left, 21);
-    instance.print(root);
-    cout << endl;
-    instance.insert(root, 25);
-    instance.print(root);
-    cout << endl;
-    instance.inorder(root);
-}
+    Tree::Node *root = instance.insert(instance.root, 45);
 
+    instance.insert(root, 35);
+    instance.insert(root, 12);
+    instance.insert(root, 0);
+    instance.insert(root, 34);
+    instance.insert(root, 57);
+    instance.insert(root, 100);
+    instance.insert(root, 2);
+    instance.insert(root, 14);
+    instance.insert(root, 25);
+    instance.insert(root, 78);
+    instance.print(root);
+    cout << endl;
+    instance.remove(root, 2);
+    instance.print(root);
+    cout << endl;
+    instance.insert(root, 80);
+    instance.print(root);
+    cout << endl;
+    instance.postorder(root);
+    cout << endl;
+    instance.print(root);
+    cout << endl;
+
+}

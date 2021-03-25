@@ -1,45 +1,44 @@
 #include <iostream>
+
 using namespace std;
 
-struct component {
+struct Stack {
     int key;
-    component *next;
+    Stack *next;
 };
 
-bool empty(component *top) {
-    component *instance = top;
+bool empty(Stack *top) {
+    Stack *instance = top;
     if (instance) return false;
     else return true;
 }
 
-void push(component **top, int key) {
-    component *instance = *top;
-    component *previous = NULL;
+void push(Stack **top, int key) {
+    Stack *instance = *top;
+    Stack *previous = NULL;
     if (empty(*top)) {
-        instance = new component();
+        instance = new Stack();
         instance->key = key;
         instance->next = NULL;
         *top = instance;
-    }
-    else {
+    } else {
         while (instance != NULL) {
             previous = instance;
             instance = instance->next;
         }
-        instance = new component();
+        instance = new Stack();
         instance->key = key;
         instance->next = NULL;
         previous->next = instance;
     }
 }
 
-int pop(component **top) {
-    component *instance;
+int pop(Stack **top) {
+    Stack *instance;
     int tmp;
     if (empty(*top)) {
         throw "queue is empty";
-    }
-    else {
+    } else {
         instance = *top;
         tmp = instance->key;
         instance = instance->next;
@@ -49,22 +48,20 @@ int pop(component **top) {
 }
 
 
-
-void get(component **top) {
-    component *instance = *top;
-    component *previous = NULL;
+void get(Stack **top) {
+    Stack *instance = *top;
+    Stack *previous = NULL;
     if (empty(*top)) {
         throw "queue is empty";
-    }
-    else {
+    } else {
         instance = *top;
         cout << instance->key << endl;
     }
 }
 
-void print(component **top) {
-    component *instance = *top;
-    while (instance != NULL){
+void print(Stack **top) {
+    Stack *instance = *top;
+    while (instance != NULL) {
         cout << instance->key << " ";
         instance = instance->next;
     }
@@ -74,9 +71,9 @@ void print(component **top) {
 
 int main() {
     try {
-        component *top = NULL;
+        Stack *top = NULL;
         cout << "PUSH" << endl;
-        srand((unsigned)(time(NULL)));
+        srand((unsigned) (time(NULL)));
         for (int i = 0; i < 5; i++) {
             push(&top, i);
         }
@@ -101,7 +98,7 @@ int main() {
         cout << pop(&top) << endl;
 
     }
-    catch (const char* exception) {
+    catch (const char *exception) {
         std::cerr << "Error: " << exception << std::endl;
     }
 }

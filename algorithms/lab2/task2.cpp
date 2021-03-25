@@ -1,26 +1,26 @@
 #include <iostream>
+
 using namespace std;
 
-struct component {
+struct Stack {
     int key;
-    component *next;
+    Stack *next;
 };
 
-void push(component **top, int key) {
-    component *instance;
-    instance = new component();
+void push(Stack **top, int key) {
+    Stack *instance;
+    instance = new Stack();
     instance->key = key;
     if (top == NULL) {
         *top = instance;
-    }
-    else {
+    } else {
         instance->next = *top;
         *top = instance;
     }
 }
 
-int pop(component **top) {
-    component *instance = *top;
+int pop(Stack **top) {
+    Stack *instance = *top;
     if (*top != NULL) {
         int tmp = instance->key;
         *top = instance->next;
@@ -29,24 +29,23 @@ int pop(component **top) {
         instance->next = NULL;
         cout << tmp << endl;
         return tmp;
-    }
-    else cout << "Стек пустий" << endl;
+    } else cout << "Стек пустий" << endl;
 }
 
-bool empty(component *top) {
+bool empty(Stack *top) {
     if (top == NULL) return true;
     else return false;
 }
 
-void get_top(component **top) {
-    component *instance = *top;
+void get_top(Stack **top) {
+    Stack *instance = *top;
     if (instance) cout << instance->key << endl;
     else cout << "Стек пустий" << endl;
 }
 
-void print(component **top) {
-    component *instance = *top;
-    while (instance != NULL){
+void print(Stack **top) {
+    Stack *instance = *top;
+    while (instance != NULL) {
         cout << instance->key << endl;
         instance = instance->next;
     }
@@ -54,7 +53,7 @@ void print(component **top) {
 
 
 int main() {
-    component *top = NULL;
+    Stack *top = NULL;
     cout << "PUSH 10 14" << endl;
     push(&top, 10);
     push(&top, 14);
@@ -63,7 +62,7 @@ int main() {
     cout << "POP" << endl;
     cout << pop(&top) << endl;
     cout << "PUSH 70 75" << endl;
-    push(&top,70);
+    push(&top, 70);
     push(&top, 75);
     cout << "PUSH 14 70 75" << endl;
     push(&top, 14);

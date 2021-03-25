@@ -27,3 +27,7 @@ add_executable(task6.2 lab6/task2.cpp)
 add_executable(task6.3 lab6/task3.cpp)
 
 add_executable(task7.1 lab7/task1.cpp)
+
+add_executable(task8.1 lab8/task1.cpp)
+
+add_executable(mkr1 mkr.cpp)

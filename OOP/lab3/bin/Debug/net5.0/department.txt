@@ -1,0 +1,6 @@
+title: hello
+lecturers: 0
+students: 0
+disciplines: 0
+awards: 0
+overall time disciplines: 0
