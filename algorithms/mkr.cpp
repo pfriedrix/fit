@@ -1,154 +1,104 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-struct Stack {
-    int key;
-    Stack *next;
+
+class Unit : Array {
+public:
+    Unit() {
+        m_health = 0;
+        m_name = "Alex";
+        m_strengh = 0;
+    }
+
+    Unit(int health, string name, int strengh) {
+        setUnit(health, name, strengh);
+
+    }
+
+    void setUnit(int health, string name, int strengh) {
+        m_health = health;
+        m_name = name;
+        m_strengh = strengh;
+
+    }
+
+    void virtual printinfo() {
+        cout << "Your unit is: " << m_name << endl << " His health is: " << m_health << endl << " His strengh is: "
+             << m_strengh << endl;
+    }
+
+protected:
+    int m_health;
+    string m_name;
+    int m_strengh;
 };
 
-void push(Stack **top, int key) {
-    Stack *instance;
-    instance = new Stack();
-    instance->key = key;
-    if (top == NULL) {
-        *top = instance;
-    } else {
-        instance->next = *top;
-        *top = instance;
+class RangeUnit : public Unit {
+public:
+    RangeUnit() {
+        m_health = 35;
+        m_strengh = 24;
+        m_name = "Sasha";
+        m_weapon = "Ak-47";
+        m_Countbullet = 35;
     }
-}
 
-Stack pop(Stack **top) {
-    Stack *instance = *top;
-    if (*top != NULL) {
-        Stack tmp = *instance;
-        *top = instance->next;
-        delete instance;
-        instance->key = 0;
-        instance->next = NULL;
-        return tmp;
-    } else throw "stack is empty";
-
-}
-
-bool empty(Stack *top) {
-    if (top == NULL) return true;
-    else return false;
-}
-
-void get_top(Stack **top) {
-    Stack *instance = *top;
-    if (instance) cout << instance->key << endl;
-    else cout << "Стек пустий" << endl;
-}
-
-void print(Stack **top) {
-    Stack *instance = *top;
-    while (instance != NULL) {
-        cout << instance->key << endl;
-        instance = instance->next;
+    RangeUnit(int m_health, string m_name, string weapon, int m_strengh, int bullets) : Unit(m_health, m_name,
+                                                                                             m_strengh) {
+        m_Countbullet = bullets;
+        m_weapon = weapon;
     }
-}
 
-///
+    void printinfo() {
+        cout << "Your unit is: " << m_name << endl << " His health is: " << m_health << endl << " His strengh is: "
+             << m_strengh << endl << "He has:" << m_weapon << endl << "He has " << m_Countbullet << "bullets";
+    }
 
-struct Queue {
-    int key;
-    Queue *next;
+protected:
+    int m_Countbullet;
+    string m_weapon;
 };
 
-bool empty(Queue *top) {
-    Queue *instance = top;
-    if (instance) return false;
-    else return true;
-}
-
-void push(Queue **top, int key) {
-    Queue *instance = *top;
-    Queue *previous = NULL;
-    if (empty(*top)) {
-        instance = new Queue();
-        instance->key = key;
-        instance->next = NULL;
-        *top = instance;
-    } else {
-        while (instance != NULL) {
-            previous = instance;
-            instance = instance->next;
-        }
-        instance = new Queue();
-        instance->key = key;
-        instance->next = NULL;
-        previous->next = instance;
+class MeleeUnit : public Unit {
+public:
+    MeleeUnit(int m_health, string m_name, string weapon, int m_strengh, int armored) : Unit(m_health, m_name,
+                                                                                             m_strengh) {
+        m_weapon = weapon;
+        m_armored = armored;
     }
-}
 
-Queue pop(Queue **top) {
-    Queue *instance;
-    Queue *poped;
-    if (empty(*top)) {
-        throw "queue is empty";
-    } else {
-        instance = *top;
-        poped = instance;
-        instance = instance->next;
-        *top = instance;
+    void printinfo() {
+        cout << "Your unit is: " << m_name << endl << " His health is: " << m_health << endl << " His strengh is: "
+             << m_strengh << endl << "He has:" << m_weapon << endl << " His armor is: " << m_armored << endl;
+
     }
-    return *poped;
-}
 
+protected:
+    string m_weapon;
+    int m_armored;
+};
 
-void get(Queue **top) {
-    Queue *instance = *top;
-    Queue *previous = NULL;
-    if (empty(*top)) {
-        throw "queue is empty";
-    } else {
-        instance = *top;
-        cout << instance->key << endl;
+class ArmoredRangeUnit : public RangeUnit, public MeleeUnit {
+    ArmoredRangeUnit(int m_health, string m_name, string m_weapon, int m_strengh, int armored, int bullets) : RangeUnit(
+            m_health, m_name, m_weapon, m_strengh, bullets), MeleeUnit(m_health, m_name, m_weapon, m_strengh, armored) {
+
     }
-}
 
-void print(Queue **top) {
-    Queue *instance = *top;
-    while (instance != NULL) {
-        cout << "address: " << instance << "\nkey: " << instance->key << "\nnext: " << instance->next;
-        instance = instance->next;
-    }
-    cout << endl;
-}
+};
+
+class Array {
+private:
+    Unit *objs[10];
+    Unit *obj = new Unit();
+    objs[0] =
+    obj;
+};
 
 
 int main() {
-    Queue *top = NULL;
-    Stack *topStack = NULL;
-    for (int i = 3; i < 55; i++) {
-        if (i % 2 != 0) {
-            push(&top, i);
-        }
-    }
-    print(&top);
-    while (1) {
-        try {
-            Queue i = pop(&top);
-            cout << "address: " << &i << "\nkey: " << i.key << "\nnext: " << i.next;
-            cout << endl;
-            push(&topStack, i.key);
-        }
-        catch (const char *exception) {
-            break;
-        }
-    }
-    cout << "Stack" << endl;
-    while (1) {
-        try {
-            Stack i = pop(&topStack);
-            if (i.key % 3 == 0) cout << "address: " << &i << "\nkey: " << i.key << "\nnext: " << i.next << endl;
-        }
-        catch (const char *exception) {
-            break;
-        }
-    }
-
+    Unit a(15, "Axe", 45);
+    a.printinfo();
+    a.setUnit(25, "void", 44);
 }

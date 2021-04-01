@@ -20,7 +20,7 @@ void seek_substring_BM(string s, string q) {
     int i = 0, j, k, N, M, count{};
     N = s.length();
     M = q.length();
-
+    bool exists = false;
     make_table(d, q);
 
     int id{};
@@ -43,9 +43,9 @@ void seek_substring_BM(string s, string q) {
     for (i = M - 1; i < N; i += d[(unsigned) s[i]]) {
         j = M - 1;
         k = i;
-        cout << "\n" << q[j] << "\t" << s[k];
+//        cout << "\n" << q[j] << "\t" << s[k];
         while ((j >= 0) && (q[j] == s[k])) {
-            cout << "\n" << q[j] << "\t" << s[k];
+//            cout << "\n" << q[j] << "\t" << s[k];
             k--;
             j--;
             count++;
@@ -53,13 +53,15 @@ void seek_substring_BM(string s, string q) {
         }
         if (j < 0) {
             cout << "\nPattern found on: " << k + 1 << endl;
+            exists = true;
         }
+
     }
+    if (exists == false) {
+        cout << "\nNot found";
+    }
+
     cout << "\nNumber of compares: " << count << "\n";
-
-
-    cout << "Array d: ";
-    for (int el : d) cout << el << " ";
 }
 
 int main() {
