@@ -33,3 +33,4 @@ add_executable(task8.1 lab8/task1.cpp)
 add_executable(mkr1 mkr.cpp)
 
 add_executable(task2.1.1 lab2.1/task1.cpp)
+add_executable(task2.2.1 lab2.2/task1.cpp)
