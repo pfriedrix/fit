@@ -391,6 +391,19 @@ task2.1/fast:
 .PHONY : task2.1/fast
 
 #=============================================================================
+# Target rules for targets named task2.3.1
+
+# Build rule for target.
+task2.3.1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.3.1
+.PHONY : task2.3.1
+
+# fast build rule for target.
+task2.3.1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.3.1.dir/build.make CMakeFiles/task2.3.1.dir/build
+.PHONY : task2.3.1/fast
+
+#=============================================================================
 # Target rules for targets named task1.5
 
 # Build rule for target.
@@ -577,6 +590,33 @@ lab2.2/task1.s: lab2.2/task1.cpp.s
 lab2.2/task1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.2.1.dir/build.make CMakeFiles/task2.2.1.dir/lab2.2/task1.cpp.s
 .PHONY : lab2.2/task1.cpp.s
+
+lab2.3/task1.o: lab2.3/task1.cpp.o
+
+.PHONY : lab2.3/task1.o
+
+# target to build an object file
+lab2.3/task1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.3.1.dir/build.make CMakeFiles/task2.3.1.dir/lab2.3/task1.cpp.o
+.PHONY : lab2.3/task1.cpp.o
+
+lab2.3/task1.i: lab2.3/task1.cpp.i
+
+.PHONY : lab2.3/task1.i
+
+# target to preprocess a source file
+lab2.3/task1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.3.1.dir/build.make CMakeFiles/task2.3.1.dir/lab2.3/task1.cpp.i
+.PHONY : lab2.3/task1.cpp.i
+
+lab2.3/task1.s: lab2.3/task1.cpp.s
+
+.PHONY : lab2.3/task1.s
+
+# target to generate assembly for a file
+lab2.3/task1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.3.1.dir/build.make CMakeFiles/task2.3.1.dir/lab2.3/task1.cpp.s
+.PHONY : lab2.3/task1.cpp.s
 
 lab2/task1.o: lab2/task1.cpp.o
 
@@ -1028,6 +1068,7 @@ help:
 	@echo "... task2.2"
 	@echo "... task2.2.1"
 	@echo "... task2.3"
+	@echo "... task2.3.1"
 	@echo "... task2.4"
 	@echo "... task3.1"
 	@echo "... task3.2"
@@ -1058,6 +1099,9 @@ help:
 	@echo "... lab2.2/task1.o"
 	@echo "... lab2.2/task1.i"
 	@echo "... lab2.2/task1.s"
+	@echo "... lab2.3/task1.o"
+	@echo "... lab2.3/task1.i"
+	@echo "... lab2.3/task1.s"
 	@echo "... lab2/task1.o"
 	@echo "... lab2/task1.i"
 	@echo "... lab2/task1.s"
