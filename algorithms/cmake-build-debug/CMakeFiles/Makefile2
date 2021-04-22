@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-bui
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/task2.4.1.dir/all
 all: CMakeFiles/task2.4.dir/all
 all: CMakeFiles/task2.1.1.dir/all
 all: CMakeFiles/task1.1.dir/all
@@ -84,6 +85,7 @@ all: CMakeFiles/task6.1.dir/all
 all: CMakeFiles/task1.2.dir/all
 all: CMakeFiles/task5.2.dir/all
 all: CMakeFiles/task7.1.dir/all
+all: CMakeFiles/task2.4.2.dir/all
 all: CMakeFiles/task5.1.dir/all
 all: CMakeFiles/task3.3.dir/all
 all: CMakeFiles/task4.1.dir/all
@@ -105,6 +107,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/task2.4.1.dir/clean
 clean: CMakeFiles/task2.4.dir/clean
 clean: CMakeFiles/task2.1.1.dir/clean
 clean: CMakeFiles/task1.1.dir/clean
@@ -116,6 +119,7 @@ clean: CMakeFiles/task6.1.dir/clean
 clean: CMakeFiles/task1.2.dir/clean
 clean: CMakeFiles/task5.2.dir/clean
 clean: CMakeFiles/task7.1.dir/clean
+clean: CMakeFiles/task2.4.2.dir/clean
 clean: CMakeFiles/task5.1.dir/clean
 clean: CMakeFiles/task3.3.dir/clean
 clean: CMakeFiles/task4.1.dir/clean
@@ -130,6 +134,33 @@ clean: CMakeFiles/task1.5.dir/clean
 clean: CMakeFiles/task8.1.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/task2.4.1.dir
+
+# All Build rule for target.
+CMakeFiles/task2.4.1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.4.1.dir/build.make CMakeFiles/task2.4.1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.4.1.dir/build.make CMakeFiles/task2.4.1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target task2.4.1"
+.PHONY : CMakeFiles/task2.4.1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/task2.4.1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/task2.4.1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/task2.4.1.dir/rule
+
+# Convenience name for target.
+task2.4.1: CMakeFiles/task2.4.1.dir/rule
+
+.PHONY : task2.4.1
+
+# clean rule for target.
+CMakeFiles/task2.4.1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.4.1.dir/build.make CMakeFiles/task2.4.1.dir/clean
+.PHONY : CMakeFiles/task2.4.1.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/task2.4.dir
@@ -246,7 +277,7 @@ CMakeFiles/mkr1.dir/clean:
 CMakeFiles/task6.2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task6.2.dir/build.make CMakeFiles/task6.2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task6.2.dir/build.make CMakeFiles/task6.2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target task6.2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target task6.2"
 .PHONY : CMakeFiles/task6.2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -300,7 +331,7 @@ CMakeFiles/task2.2.1.dir/clean:
 CMakeFiles/task6.3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task6.3.dir/build.make CMakeFiles/task6.3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task6.3.dir/build.make CMakeFiles/task6.3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target task6.3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target task6.3"
 .PHONY : CMakeFiles/task6.3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -327,7 +358,7 @@ CMakeFiles/task6.3.dir/clean:
 CMakeFiles/task6.1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task6.1.dir/build.make CMakeFiles/task6.1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task6.1.dir/build.make CMakeFiles/task6.1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target task6.1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=41,42 "Built target task6.1"
 .PHONY : CMakeFiles/task6.1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -381,7 +412,7 @@ CMakeFiles/task1.2.dir/clean:
 CMakeFiles/task5.2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.2.dir/build.make CMakeFiles/task5.2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.2.dir/build.make CMakeFiles/task5.2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target task5.2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target task5.2"
 .PHONY : CMakeFiles/task5.2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -408,7 +439,7 @@ CMakeFiles/task5.2.dir/clean:
 CMakeFiles/task7.1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task7.1.dir/build.make CMakeFiles/task7.1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task7.1.dir/build.make CMakeFiles/task7.1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target task7.1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=47,48 "Built target task7.1"
 .PHONY : CMakeFiles/task7.1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -429,13 +460,40 @@ CMakeFiles/task7.1.dir/clean:
 .PHONY : CMakeFiles/task7.1.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/task2.4.2.dir
+
+# All Build rule for target.
+CMakeFiles/task2.4.2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.4.2.dir/build.make CMakeFiles/task2.4.2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.4.2.dir/build.make CMakeFiles/task2.4.2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target task2.4.2"
+.PHONY : CMakeFiles/task2.4.2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/task2.4.2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/task2.4.2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/task2.4.2.dir/rule
+
+# Convenience name for target.
+task2.4.2: CMakeFiles/task2.4.2.dir/rule
+
+.PHONY : task2.4.2
+
+# clean rule for target.
+CMakeFiles/task2.4.2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.4.2.dir/build.make CMakeFiles/task2.4.2.dir/clean
+.PHONY : CMakeFiles/task2.4.2.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/task5.1.dir
 
 # All Build rule for target.
 CMakeFiles/task5.1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.1.dir/build.make CMakeFiles/task5.1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task5.1.dir/build.make CMakeFiles/task5.1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target task5.1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target task5.1"
 .PHONY : CMakeFiles/task5.1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -462,7 +520,7 @@ CMakeFiles/task5.1.dir/clean:
 CMakeFiles/task3.3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.3.dir/build.make CMakeFiles/task3.3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.3.dir/build.make CMakeFiles/task3.3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target task3.3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target task3.3"
 .PHONY : CMakeFiles/task3.3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -489,7 +547,7 @@ CMakeFiles/task3.3.dir/clean:
 CMakeFiles/task4.1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task4.1.dir/build.make CMakeFiles/task4.1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task4.1.dir/build.make CMakeFiles/task4.1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target task4.1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target task4.1"
 .PHONY : CMakeFiles/task4.1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -516,7 +574,7 @@ CMakeFiles/task4.1.dir/clean:
 CMakeFiles/task3.1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.1.dir/build.make CMakeFiles/task3.1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.1.dir/build.make CMakeFiles/task3.1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target task3.1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target task3.1"
 .PHONY : CMakeFiles/task3.1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -570,7 +628,7 @@ CMakeFiles/task2.2.dir/clean:
 CMakeFiles/task3.2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.2.dir/build.make CMakeFiles/task3.2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.2.dir/build.make CMakeFiles/task3.2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target task3.2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target task3.2"
 .PHONY : CMakeFiles/task3.2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -732,7 +790,7 @@ CMakeFiles/task1.5.dir/clean:
 CMakeFiles/task8.1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task8.1.dir/build.make CMakeFiles/task8.1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task8.1.dir/build.make CMakeFiles/task8.1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=45,46 "Built target task8.1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/cmake-build-debug/CMakeFiles --progress-num=49,50 "Built target task8.1"
 .PHONY : CMakeFiles/task8.1.dir/all
 
 # Build rule for subdir invocation for target.

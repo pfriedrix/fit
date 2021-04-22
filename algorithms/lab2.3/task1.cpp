@@ -1,5 +1,6 @@
 #include <iostream>
 #include <list>
+#include "prettyprint.hpp"
 
 
 using namespace std;
@@ -11,9 +12,8 @@ void display(int arr[], int start, int end) {
     cout << endl;
 }
 
-int *quickSort(int arr[], int left, int right, int length) {
+void quickSort(int arr[], int left, int right, int length, int &comparisons, int &swaps) {
     display(arr, 0, length);
-    int comparisons, swaps;
     int i = left;
     int j = right;
     int pivot = arr[(left + right) / 2];
@@ -33,42 +33,42 @@ int *quickSort(int arr[], int left, int right, int length) {
         }
 
     }
-    if (left < j) {
-        int *res = quickSort(arr, left, j, length);
-        comparisons += res[0];
-        swaps += res[1];
-    }
-    if (i < right) {
-        int *res = quickSort(arr, i, right, length);
-        comparisons += res[0];
-        swaps += res[1];
-    }
-    int res[2];
-    res[0] = comparisons;
-    res[1] = swaps;
-    return res;
+    if (left < j) quickSort(arr, left, j, length, comparisons, swaps);
+    if (i < right) quickSort(arr, i, right, length, comparisons, swaps);
 }
 
-void cocktailSort(int arr[], int right, int left, bool reversed) {
+void cocktailSort(int arr[], int right, int left, bool reversed, int length, int &comparisons, int &swaps) {
     if (right == left) return;
     if (reversed) {
         for (int i = left - 1; i >= right; i--) {
-            if (arr[i] > arr[i + 1]) swap(arr[i], arr[i + 1]);
+            if (arr[i] > arr[i + 1]) {
+                swap(arr[i], arr[i + 1]);
+                swaps++;
+                comparisons++;
+            }
         }
-        cocktailSort(arr, right + 1, left, !reversed);
+        display(arr, 0, length);
+        cocktailSort(arr, right + 1, left, !reversed, length, comparisons, swaps);
     } else {
         for (int i = right; i < left; i++) {
-            if (arr[i] > arr[i + 1]) swap(arr[i], arr[i + 1]);
+            if (arr[i] > arr[i + 1]) {
+                swap(arr[i], arr[i + 1]);
+                swaps++;
+                comparisons++;
+            }
         }
-        cocktailSort(arr, right, left - 1, !reversed);
+        display(arr, 0, length);
+        cocktailSort(arr, right, left - 1, !reversed, length, comparisons, swaps);
     }
 }
 
 void countSort(int arr[], int length, int result[]) {
-    int map[50]{0};
+    int map[51]{0};
     for (int i = 0; i < length; i++) map[arr[i]]++;
+    for (int el : map) cout << el << " ";
+    cout << endl;
     int inst = 0;
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < 51; i++) {
         if (i != 0 && map[i] == 0) continue;
         for (int j = 0; j < map[i]; j++) {
             result[inst] = i;
@@ -76,6 +76,7 @@ void countSort(int arr[], int length, int result[]) {
         }
     }
 }
+
 
 void radixSort(int arr[], int length) {
     int max = arr[0];
@@ -92,6 +93,7 @@ void radixSort(int arr[], int length) {
             r /= pow(10, i);
             map[r].push_back(arr[j]);
         }
+        cout << map << std::endl;
         int c = 0;
         for (int j = 0; j < 10; j++) {
             while (!map[j].empty()) {
@@ -111,11 +113,17 @@ int main() {
     int arr[length];
     srand(time(nullptr));
     for (int i = 0; i < length; i++) {
-        arr[i] = rand() % 500;
+//        arr[i] = rand() % 500;
+        cin >> arr[i];
+//        arr[i] = i + 1;
     }
     display(arr, 0, length);
+    int swaps = 0, comparisons = 0;
     int result[length];
     radixSort(arr, length);
+
+//    cout << "Number of swaps: " << swaps << endl;
+//    cout << "Number of comparisons: " << comparisons << endl << endl;
     for (int l : arr) cout << l << " ";
     cout << endl;
 }

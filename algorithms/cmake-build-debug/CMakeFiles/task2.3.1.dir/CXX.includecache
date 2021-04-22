@@ -6,9 +6,33 @@
 
 #IncludeRegexTransform: 
 
+/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab2.3/prettyprint.hpp
+cstddef
+-
+iterator
+-
+memory
+-
+ostream
+-
+set
+-
+tuple
+-
+type_traits
+-
+unordered_set
+-
+utility
+-
+valarray
+-
+
 /Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab2.3/task1.cpp
 iostream
 -
 list
 -
+prettyprint.hpp
+/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab2.3/prettyprint.hpp
 

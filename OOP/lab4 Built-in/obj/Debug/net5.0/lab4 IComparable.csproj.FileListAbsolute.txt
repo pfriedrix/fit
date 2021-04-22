@@ -1,0 +1,15 @@
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/obj/Debug/net5.0/lab4 IComparable.csprojAssemblyReference.cache
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/obj/Debug/net5.0/lab4 IComparable.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/obj/Debug/net5.0/lab4 IComparable.AssemblyInfoInputs.cache
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/obj/Debug/net5.0/lab4 IComparable.AssemblyInfo.cs
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/obj/Debug/net5.0/lab4 IComparable.csproj.CoreCompileInputs.cache
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/bin/Debug/net5.0/lab4 IComparable.deps.json
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/bin/Debug/net5.0/lab4 IComparable.runtimeconfig.json
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/bin/Debug/net5.0/lab4 IComparable.runtimeconfig.dev.json
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/bin/Debug/net5.0/lab4 IComparable.dll
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/bin/Debug/net5.0/ref/lab4 IComparable.dll
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/bin/Debug/net5.0/lab4 IComparable.pdb
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/obj/Debug/net5.0/lab4 IComparable.dll
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/obj/Debug/net5.0/ref/lab4 IComparable.dll
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/obj/Debug/net5.0/lab4 IComparable.pdb
+/Users/dnl-krsvch/Documents/Projects/FIT/OOP/lab4 IComparable/obj/Debug/net5.0/lab4 IComparable.genruntimeconfig.cache
