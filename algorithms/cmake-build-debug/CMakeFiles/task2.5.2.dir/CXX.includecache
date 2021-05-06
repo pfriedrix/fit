@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/dnl-krsvch/Documents/Projects/FIT/algorithms/lab2.5/task2.cpp
+iostream
+-
+sstream
+-
+valarray
+-
+

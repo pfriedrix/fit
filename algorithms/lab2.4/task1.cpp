@@ -44,7 +44,10 @@ void merge(int *arr, int low, int high, int mid, const int length) {
         j++;
         merged = true;
     }
-    if (merged) display(c, 0, k);
+    if (merged)
+        if (low > 1 || k > length) display(c, 0, high);
+        else display(c, 0, high);
+
     for (i = low; i < k; i++) {
         arr[i] = c[i];
     }
@@ -71,7 +74,7 @@ int main() {
     int arr[length];
     srand(time(nullptr));
     for (int i = 0; i < length; i++) {
-        arr[i] = rand() % 500;
+        cin >> arr[i];
     }
     display(arr, 0, length);
 

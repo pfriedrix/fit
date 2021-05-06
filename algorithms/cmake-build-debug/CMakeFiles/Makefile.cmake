@@ -52,6 +52,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/task2.5.3.dir/DependInfo.cmake"
+  "CMakeFiles/task2.5.1.dir/DependInfo.cmake"
   "CMakeFiles/task2.4.1.dir/DependInfo.cmake"
   "CMakeFiles/task2.4.dir/DependInfo.cmake"
   "CMakeFiles/task2.1.1.dir/DependInfo.cmake"
@@ -59,6 +61,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/mkr1.dir/DependInfo.cmake"
   "CMakeFiles/task6.2.dir/DependInfo.cmake"
   "CMakeFiles/task2.2.1.dir/DependInfo.cmake"
+  "CMakeFiles/task2.5.2.dir/DependInfo.cmake"
   "CMakeFiles/task6.3.dir/DependInfo.cmake"
   "CMakeFiles/task6.1.dir/DependInfo.cmake"
   "CMakeFiles/task1.2.dir/DependInfo.cmake"
@@ -73,6 +76,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/task3.2.dir/DependInfo.cmake"
   "CMakeFiles/task1.3.dir/DependInfo.cmake"
   "CMakeFiles/task2.3.dir/DependInfo.cmake"
+  "CMakeFiles/task2.5.dir/DependInfo.cmake"
   "CMakeFiles/task2.1.dir/DependInfo.cmake"
   "CMakeFiles/task2.3.1.dir/DependInfo.cmake"
   "CMakeFiles/task1.5.dir/DependInfo.cmake"

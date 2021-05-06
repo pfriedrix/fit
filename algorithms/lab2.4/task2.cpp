@@ -48,7 +48,7 @@ int main() {
     int arr[length];
     srand(time(nullptr));
     for (int i = 0; i < length; i++) {
-        arr[i] = rand() % 500;
+        cin >> arr[i];
     }
     display(arr, 0, length);
     heapSort(arr, length);

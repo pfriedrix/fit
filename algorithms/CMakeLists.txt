@@ -40,3 +40,8 @@ add_executable(task2.3.1 lab2.3/task1.cpp)
 
 add_executable(task2.4.1 lab2.4/task1.cpp)
 add_executable(task2.4.2 lab2.4/task2.cpp)
+
+add_executable(task2.5.1 lab2.5/task1.cpp)
+add_executable(task2.5.2 lab2.5/task2.cpp)
+add_executable(task2.5.3 lab2.5/task3.cpp)
+add_executable(task2.5 lab2.5/task.cpp)
