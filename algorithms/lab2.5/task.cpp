@@ -56,7 +56,7 @@ void ExternalMerge() {
         fclose(f);
 
         ifstream file1("fileA.txt");
-        cout << "Temp fileA: ";
+        cout << "fileA: ";
         if (file1.is_open()) {
             while (!file1.eof()) {
                 getline(file1, line);
@@ -64,7 +64,7 @@ void ExternalMerge() {
             }
             file1.close();
         }
-        cout << "Temp fileB: ";
+        cout << "fileB: ";
         ifstream file2("fileB.txt");
         if (file2.is_open()) {
             while (!file2.eof()) {
@@ -172,7 +172,7 @@ void ExternalNaturalMerge() {
         fclose(f2);
 
         ifstream file1("fileA.txt");
-        cout << "Temp fileA: ";
+        cout << "fileA: ";
         if (file1.is_open()) {
             while (!file1.eof()) {
                 getline(file1, line);
@@ -180,7 +180,7 @@ void ExternalNaturalMerge() {
             }
             file1.close();
         }
-        cout << "Temp fileB: ";
+        cout << "fileB: ";
         ifstream file2("fileB.txt");
         if (file2.is_open()) {
             while (!file2.eof()) {
@@ -309,7 +309,7 @@ void MultiPathSorting() {
             break;
 
         ifstream file1("fileA.txt");
-        cout << "Temp fileA: ";
+        cout << "fileA: ";
         if (file1.is_open()) {
             while (!file1.eof()) {
                 getline(file1, line);
@@ -317,7 +317,7 @@ void MultiPathSorting() {
             }
             file1.close();
         }
-        cout << "Temp fileB: ";
+        cout << "fileB: ";
         ifstream file2("fileB.txt");
         if (file2.is_open()) {
             while (!file2.eof()) {
@@ -326,7 +326,7 @@ void MultiPathSorting() {
             }
             file2.close();
         }
-        cout << "Temp fileC: ";
+        cout << "fileC: ";
         ifstream file3("fileC.txt");
         if (file3.is_open()) {
             while (!file3.eof()) {
@@ -443,26 +443,23 @@ int main() {
     int answer;
     cin >> answer;
     vector<int> values;
+    cout << "Enter the count of values to generate: ";
+    int size;
+    cin >> size;
     switch (answer) {
         case 1: {
-            cout << "Enter the count of values to generate: ";
-            int size;
-            cin >> size;
             for (int i = 0; i < size; i++) {
                 values.push_back(rand() % 100);
             }
             break;
         }
         case 2: {
-            char answ = ' ';
-            while (answ != 'y') {
+            cout << "Enter the value to add in your array: ";
+            for (int i = 0; i < size; i++) {
                 int value;
-                cout << "Enter the value to add in your array: ";
                 cin >> value;
                 values.push_back(value);
-                cout << value << " were successfully added to your file" << endl;
-                cout << "do you want to stop process of adding values?(y/n)" << endl;
-                cin >> answ;
+
             }
             break;
         }
@@ -473,13 +470,14 @@ int main() {
     for (int i = 0; i < values.size(); i++) {
         cout << values[i] << " ";
     }
-    cout << ", were successfully added to file 'main.txt'." << endl;
+//    cout << ", were successfully added to file 'main.txt'." << endl;
     ofstream stream;
     stream.open("main.txt");
     for (int i = 0; i < values.size(); i++) {
         stream << values[i] << " ";
     }
     stream.close();
+    cout << endl;
     cout << "[1]" << "   -->   " << "to process the algorithm for external merge sorting." << endl;
     cout << "[2]" << "   -->   " << "to process the external sorting algorithm by natural fusion." << endl;
     cout << "[3]" << "   -->   " << "to process the algorithm for external sorting by multi - path merging." << endl;
@@ -489,14 +487,35 @@ int main() {
     switch (key) {
         case 1: {
             ExternalMerge();
+            ifstream disp;
+            disp.open("main.txt");
+            for (int value : values) {
+                disp >> value;
+                cout << value << " ";
+            }
+            disp.close();
             break;
         }
         case 2: {
             ExternalNaturalMerge();
+            ifstream disp;
+            disp.open("main.txt");
+            for (int value : values) {
+                disp >> value;
+                cout << value << " ";
+            }
+            disp.close();
             break;
         }
         case 3: {
             MultiPathSorting();
+            ifstream disp;
+            disp.open("main.txt");
+            for (int value : values) {
+                disp >> value;
+                cout << value << " ";
+            }
+            disp.close();
             break;
         }
         default:

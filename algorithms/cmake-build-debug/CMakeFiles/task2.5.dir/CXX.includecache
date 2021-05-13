@@ -13,12 +13,8 @@ cmath
 -
 fstream
 -
-string
--
 vector
 -
 time.h
--
-iostream
 -
 
