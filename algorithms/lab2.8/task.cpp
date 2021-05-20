@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 #define v 6
@@ -28,18 +29,27 @@ void floyd(int graph[][v]) {
             dist[i][j] = graph[i][j];
         }
     }
-
+    vector<int> routes[v];
     for (int k = 0; k < v; k++) {
         for (int i = 0; i < v; i++) {
             for (int j = 0; j < v; j++) {
                 if (dist[i][j] > (dist[i][k] + dist[k][j]) && (dist[k][j] != INF && dist[i][k] != INF)) {
                     dist[i][j] = dist[i][k] + dist[k][j];
+                    routes[i].push_back(j);
                 }
             }
         }
     }
 
     print(dist);
+    for (auto route: routes) {
+        for (int i : route) {
+            cout << i << "->";
+        }
+        cout << endl;
+    }
+
+
 }
 
 int main() {

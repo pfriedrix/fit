@@ -2,7 +2,7 @@ using System;
 
 namespace lab4
 {
-    class Magazine : PrintedEdition, Editor
+    class Magazine : PrintedEdition
     {
         private int public_year;
         private int numb_magazine;

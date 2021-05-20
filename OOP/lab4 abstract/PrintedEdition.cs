@@ -6,14 +6,14 @@ using System.Linq;
 namespace lab4
 {
 
-    class PrintedEdition: Editor
+    abstract class PrintedEdition
     {
         private string title;
         private double cost;
         private string language;
         private string purpose;
         protected string[] purposes ={
-            "science", "learning", "socio-political", "public"};
+            "science", "learning", "socio-political"};
 
         public string Purpose
         {

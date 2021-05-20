@@ -2,7 +2,7 @@ using System;
 
 namespace lab4
 {
-    class Book : PrintedEdition, Editor
+    class Book : PrintedEdition
     {
         private string author;
         private int pages;

@@ -6,14 +6,13 @@ using System.Collections.Generic;
 
 namespace lab4
 {
-    public class Magazine: PrintedEdition,  IComparer<Magazine>
+    public class Magazine: PrintedEdition, IComparable
     {
         private int public_year;
         private int numb_magazine;
         private int circulation;
         private int popularity;
         private int pages;
-        public int points;
 
 
         public int Pages
@@ -57,17 +56,16 @@ namespace lab4
             const double edition = 1.01;
             const double tax = 0.19;
             popularity = (int) (sold + circulation * paper_cost + circulation * edition + circulation * tax);
-            points = 10;
         }
 
         public Magazine(string title, double cost, string language, string purpose, int publicYear, int numbMagazine,
-            int circulation, int popularity) : base(title, cost, language, purpose)
+            int circulation, int popularity, int pages) : base(title, cost, language, purpose)
         {
             public_year = publicYear;
             numb_magazine = numbMagazine;
             this.circulation = circulation;
             this.popularity = popularity;
-            points = 10;
+            this.pages = pages;
         }
         
         
@@ -83,46 +81,19 @@ namespace lab4
                           "\npurpose: " + this.Purpose);
         }
         
-        public int Compare(Magazine x, Magazine y)
+       
+        public int CompareTo(object obj)
         {
-            if (x.Pages > y.Pages)
-            {
-                if (y.points < 1)
-                {
-                    return 0;
-                }
-                y.points--;
-            }
-            else if (x.Pages < y.Pages)
-            {
-                if (x.points < 1)
-                {
-                    return 0;
-                }
-                x.points--;
-            }
-
-            if (x.Popularity > y.Popularity)
-            {
-                if (y.points < 1)
-                {
-                    return 0;
-                }
-                y.points--;
-            }
-            
-            else if (x.Popularity < y.Popularity)
-            {
-                if (x.points < 1)
-                {
-                    return 0;
-                }
-                x.points--;
-            }
-
-            return 1;
+            if (obj == null) return 1;
+            Magazine other = obj as Magazine;
+            if (other != null) return this.Cost.CompareTo(other.Cost);
+            else throw new ArgumentException("Object is not a Magazine");
         }
 
+        public static IComparer sort()
+        {
+            return (IComparer) new sortByPagesAndPopularity();
+        }
     }
 
 
@@ -191,6 +162,30 @@ namespace lab4
         public MagazinesEnum GetEnumerator()
         {
             return new MagazinesEnum(_magazine);
+        }
+    }
+
+    class sortByPagesAndPopularity : IComparer
+    {
+        public int Compare(object x, object y)
+        {
+            Magazine x1 = (Magazine) x;
+            Magazine y1 = (Magazine) y; 
+
+            
+            if (x1.Pages > y1.Pages || x1.Popularity > y1.Popularity)
+            {
+                return 1;
+            }
+            else if (x1.Pages < y1.Pages || x1.Popularity < y1.Popularity)
+            {
+                return -1;
+            }
+            else
+            {
+                return 0;
+            }
+
         }
     }
 }

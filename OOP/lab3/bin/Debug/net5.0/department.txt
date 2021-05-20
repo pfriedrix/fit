@@ -1,6 +1,66 @@
 title: hello
 lecturers: 0
+students: 1000
+disciplines: 0
+awards: 0
+overall time disciplines: 0
+title: 
+lecturers: 0
 students: 0
 disciplines: 0
+awards: 0
+overall time disciplines: 0
+title: hello
+lecturers: 10
+students: 1030
+disciplines: 20
+awards: 0
+overall time disciplines: 0
+title: hello
+lecturers: 10
+students: 1030
+disciplines: 20
+awards: 0
+overall time disciplines: 0
+title: hello
+lecturers: 10
+students: 1030
+disciplines: 20
+awards: 0
+overall time disciplines: 0
+title: hello
+lecturers: 10
+students: 1030
+disciplines: 20
+awards: 0
+overall time disciplines: 0
+title: hello
+lecturers: 10
+students: 1030
+disciplines: 20
+awards: 0
+overall time disciplines: 0
+title: hello
+lecturers: 10
+students: 1030
+disciplines: 20
+awards: 0
+overall time disciplines: 0
+title: hello
+lecturers: 10
+students: 1030
+disciplines: 20
+awards: 0
+overall time disciplines: 0
+title: hello
+lecturers: 10
+students: 1030
+disciplines: 20
+awards: 0
+overall time disciplines: 0
+title: hello
+lecturers: 10
+students: 1030
+disciplines: 20
 awards: 0
 overall time disciplines: 0

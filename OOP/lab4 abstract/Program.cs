@@ -1,4 +1,5 @@
 ﻿using System;
+using lab4;
 
 namespace lab4_abstract
 {
@@ -6,7 +7,9 @@ namespace lab4_abstract
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Magazine mag = new Magazine("Harry Potter 1", 19.4, "us", "fantasy", 2000, 10, 1000, 10);
+            mag.Purpose = "learning";
+            mag.export();
         }
     }
 }
