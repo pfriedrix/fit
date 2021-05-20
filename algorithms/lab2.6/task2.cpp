@@ -19,9 +19,9 @@ int find_set(int i, int parent[]) {
 }
 
 void buildGraph(Graph graph[]) {
-    int weights[] = {1, 6, 3, 2, 4, 2, 7, 1, 6, 8, 9, 5};
-    int destinations[] = {2, 3, 4, 5, 5, 4, 5, 6, 8, 9, 9, 7};
-    int vertexes[] = {1, 2, 1, 4, 2, 2, 3, 5, 4, 5, 6, 3};
+    int weights[] = {1, 5, 5, 4, 4, 7, 4, 1, 6, 8, 9, 5};
+    int destinations[] = {2, 3, 6, 7, 8, 8, 10, 6, 8, 9, 9, 7};
+    int vertexes[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
     for (int i = 0; i < 12; i++) {
         graph[i].vertex = vertexes[i];
         graph[i].weight = weights[i];

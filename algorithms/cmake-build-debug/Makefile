@@ -170,6 +170,19 @@ task2.5.3/fast:
 .PHONY : task2.5.3/fast
 
 #=============================================================================
+# Target rules for targets named task2.8
+
+# Build rule for target.
+task2.8: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 task2.8
+.PHONY : task2.8
+
+# fast build rule for target.
+task2.8/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.8.dir/build.make CMakeFiles/task2.8.dir/build
+.PHONY : task2.8/fast
+
+#=============================================================================
 # Target rules for targets named task2.5.1
 
 # Build rule for target.
@@ -978,6 +991,33 @@ lab2.7/task.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.7.dir/build.make CMakeFiles/task2.7.dir/lab2.7/task.cpp.s
 .PHONY : lab2.7/task.cpp.s
 
+lab2.8/task.o: lab2.8/task.cpp.o
+
+.PHONY : lab2.8/task.o
+
+# target to build an object file
+lab2.8/task.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.8.dir/build.make CMakeFiles/task2.8.dir/lab2.8/task.cpp.o
+.PHONY : lab2.8/task.cpp.o
+
+lab2.8/task.i: lab2.8/task.cpp.i
+
+.PHONY : lab2.8/task.i
+
+# target to preprocess a source file
+lab2.8/task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.8.dir/build.make CMakeFiles/task2.8.dir/lab2.8/task.cpp.i
+.PHONY : lab2.8/task.cpp.i
+
+lab2.8/task.s: lab2.8/task.cpp.s
+
+.PHONY : lab2.8/task.s
+
+# target to generate assembly for a file
+lab2.8/task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.8.dir/build.make CMakeFiles/task2.8.dir/lab2.8/task.cpp.s
+.PHONY : lab2.8/task.cpp.s
+
 lab2/task1.o: lab2/task1.cpp.o
 
 .PHONY : lab2/task1.o
@@ -1439,6 +1479,7 @@ help:
 	@echo "... task2.6.1"
 	@echo "... task2.6.2"
 	@echo "... task2.7"
+	@echo "... task2.8"
 	@echo "... task3.1"
 	@echo "... task3.2"
 	@echo "... task3.3"
@@ -1498,6 +1539,9 @@ help:
 	@echo "... lab2.7/task.o"
 	@echo "... lab2.7/task.i"
 	@echo "... lab2.7/task.s"
+	@echo "... lab2.8/task.o"
+	@echo "... lab2.8/task.i"
+	@echo "... lab2.8/task.s"
 	@echo "... lab2/task1.o"
 	@echo "... lab2/task1.i"
 	@echo "... lab2/task1.s"

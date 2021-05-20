@@ -430,9 +430,9 @@ void MultiPathSorting() {
         fclose(f2);
         fclose(f3);
     }
-    remove("fileA.txt");
-    remove("fileB.txt");
-    remove("fileC.txt");
+//    remove("fileA.txt");
+//    remove("fileB.txt");
+//    remove("fileC.txt");
 }
 
 int main() {

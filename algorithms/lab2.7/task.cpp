@@ -66,27 +66,32 @@ public:
 
 ///////////////////
 void DijkstrasTest() {
-    Node *a = new Node('a');
-    Node *b = new Node('b');
-    Node *c = new Node('c');
-    Node *d = new Node('d');
-    Node *e = new Node('e');
-    Node *f = new Node('f');
-    Edge *e1 = new Edge(a, c, 5);
-    Edge *e2 = new Edge(a, d, 4);
-    Edge *e3 = new Edge(c, b, 6);
-    Edge *e4 = new Edge(d, c, 6);
-    Edge *e5 = new Edge(c, d, 5);
-    Edge *e6 = new Edge(e, d, 7);
-    Edge *e7 = new Edge(e, f, 5);
-    Edge *e8 = new Edge(d, f, 7);
-    Edge *e9 = new Edge(f, b, 10);
-    Edge *e10 = new Edge(e, b, 10);
-    Edge *e11 = new Edge(a, e, 3);
-    Edge *e12 = new Edge(c, e, 1);
+    Node *a = new Node('1');
+    Node *b = new Node('2');
+    Node *c = new Node('3');
+    Node *d = new Node('4');
+    Node *e = new Node('5');
+    Node *f = new Node('6');
+    Node *g = new Node('7');
+    Edge *e1 = new Edge(a, b, 3);
+    Edge *e2 = new Edge(a, d, 1);
+    Edge *e3 = new Edge(a, e, 7);
+    Edge *e4 = new Edge(e, b, 1);
+    Edge *e5 = new Edge(c, e, 9);
+    Edge *e6 = new Edge(c, g, 6);
+    Edge *e7 = new Edge(c, d, 8);
+    Edge *e8 = new Edge(d, f, 3);
+    Edge *e9 = new Edge(f, g, 2);
+    Edge *e10 = new Edge(e, f, 5);
+    Edge *e11 = new Edge(g, e, 4);
     a->distanceFromStart = 0;
     Dijkstras();
+    PrintShortestRouteTo(b);
+    PrintShortestRouteTo(c);
+    PrintShortestRouteTo(d);
+    PrintShortestRouteTo(e);
     PrintShortestRouteTo(f);
+    PrintShortestRouteTo(g);
 }
 
 void Dijkstras() {
