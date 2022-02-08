@@ -1,1 +1,49 @@
-<mxfile host="app.diagrams.net" modified="2022-02-08T20:19:06.170Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Safari/605.1.15" version="16.5.4" etag="tUNqG0oQwFWaKyf-jxyP" type="github"><diagram id="ftvD7AiR_uyU1PkGLEQQ">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-02-08T21:55:30.632Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Safari/605.1.15" etag="J9us9B8bYhMpFc8dhDwz" version="16.5.4" type="github">
+  <diagram id="ftvD7AiR_uyU1PkGLEQQ" name="Page-1">
+    <mxGraphModel dx="946" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x-vbml0VKtfp5pCrWx_r-1" target="x-vbml0VKtfp5pCrWx_r-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x-vbml0VKtfp5pCrWx_r-1" target="x-vbml0VKtfp5pCrWx_r-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-1" value="Local&#xa;Repository&#xa;Manager" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="100" y="170" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x-vbml0VKtfp5pCrWx_r-2" target="x-vbml0VKtfp5pCrWx_r-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-2" value="budgetizer" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="170" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-3" value="UserDefaults" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="112.5" y="250" width="85" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x-vbml0VKtfp5pCrWx_r-6" target="x-vbml0VKtfp5pCrWx_r-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x-vbml0VKtfp5pCrWx_r-6" target="x-vbml0VKtfp5pCrWx_r-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-6" value="Firebase SDK" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="430" y="170" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-8" value="Authentication&#xa;Service&#xa;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="425" y="70" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x-vbml0VKtfp5pCrWx_r-12" target="x-vbml0VKtfp5pCrWx_r-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-12" value="Firestore&#xa;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="430" y="280" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="x-vbml0VKtfp5pCrWx_r-14" value="DocumentDB&lt;br&gt;" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="437.5" y="370" width="85" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
